@@ -1,0 +1,42 @@
+[
+  { "id": "1",
+    "title": "AGA Clinical Practice Guideline on Focal Microbiota–Based Therapies",
+    "authors": "Anne F. Peery, Colleen R. Kelly, Dina Kao, Aamer Imdad, Osama Altayar",
+    "source": "Pubmed",
+    "date": "Mar 8, 2024",
+    "image": "/assets/guideline1.webp"
+  },
+  { 
+    "id": "2",
+    "title": "Initial management of hyperglycemia in adults with type 2 diabetes mellitus",
+    "authors": "Deborah J. Wexler, MD, MSc, David M. Nathan, MD, Kasia Rubinow, MD",
+    "source": "Pubmed",
+    "date": "Feb 12, 2024",
+    "image": "/assets/guideline2.webp"
+  },
+  { 
+    "id": "3",
+    "title": "2023 EULAR recommendations on imaging in diagnosis and management",
+    "authors": "Peter Mandl, Maria Antonietta DAgostino,amer Imdad, Osama Altayar",
+    "source": "Pubmed",
+    "date": "Feb 6, 2024",
+    "image": "/assets/guideline2.webp"
+  },
+
+   {
+    "id": "4",
+    "title": "2023 EULAR recommendations on imaging in diagnosis and management",
+    "authors": "Peter Mandl, Maria Antonietta DAgostino,amer Imdad, Osama Altayar",
+    "source": "Pubmed",
+    "date": "Feb 6, 2024",
+    "image": "/assets/guideline2.webp"
+  },
+   {
+    "id": "5",
+    "title": "AGA Clinical Practice Guideline on Focal Microbiota–Based Therapies",
+    "authors": "Anne F. Peery, Colleen R. Kelly, Dina Kao, Aamer Imdad, Osama Altayar",
+    "source": "Pubmed",
+    "date": "Mar 8, 2024",
+    "image": "/assets/guideline1.webp"
+  }
+]

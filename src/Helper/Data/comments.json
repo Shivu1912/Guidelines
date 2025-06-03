@@ -1,0 +1,14 @@
+ [
+  {
+    "name": "Dr. Nivs K.",
+    "text": "Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Vestibulum efficitur justo vel massa luctus, non hendrerit arcu p",
+    "time": "3 Days ago",
+    "avatar": "../assets/user2.webp"
+  },
+  {
+    "name": "Dr. Rudra S.",
+    "text": "Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Vestibulum efficitur justo vel massa luctus, non hendrerit arcu p",
+    "time": "3 Days ago",
+    "avatar": "../assets/user3.webp"
+  }
+]

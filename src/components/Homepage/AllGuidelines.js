@@ -1,80 +1,143 @@
-import { Box, Flex, Text,Image ,Divider,HStack, Heading,Tag,MenuList,MenuItem,MenuButton,Menu,Button} from '@chakra-ui/react';
-import allGuidelines from '../../Helper/Data/allGuidelines';
-import {ChevronDownIcon } from "@chakra-ui/icons";
+import { useEffect, useState } from 'react';
+import {
+  Box,
+  Flex,
+  Text,
+  Image,
+  Divider,
+  HStack,
+  Heading,
+  Link,
+  MenuList,
+  MenuItem,
+  MenuButton,
+  Menu,
+  Button
+} from '@chakra-ui/react';
+import allGuidelinesData from '../../Helper/Data/allGuidelines.json';
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
+const AllGuidelines = () => {
+  const [guidelines, setGuidelines] = useState([]);
+  const [filterType, setFilterType] = useState('All');
+  const [filterValue, setFilterValue] = useState(null);
 
-const  AllGuidelines= () => {
+  useEffect(() => {
+    setGuidelines(allGuidelinesData);
+  }, []);
+
+  
+  const organisations = [...new Set(allGuidelinesData.map(item => item.organization))];
+  const specialities = [...new Set(allGuidelinesData.map(item => item.speciality))];
+
+  const filteredGuidelines = guidelines.filter(g => {
+    if (filterType === 'All') return true;
+    if (filterType === 'Organization') return g.organization === filterValue;
+    if (filterType === 'Speciality') return g.speciality === filterValue;
+    return true;
+  });
+
   return (
-    <Box  my={10}>
+    <Box my={2}>
+      <Flex ml={{ base: 10, lg: "67px" }} mt="30px" gap="10px" align="center">
+        <Image src="../assets/book.webp" alt="book Logo" boxSize={{ base: "30px", lg: "50px" }} />
+        <Text fontSize={{ base: "xl", lg: "2xl" }} fontWeight="bold" fontFamily="'Noto Sans', sans-serif" color="#0E5674">All Guidelines</Text>
+      </Flex>
 
-        <Flex ml="60px" mt="60px"gap="20px" align="center">
-            <Image src="..\assets\book.webp" alt="book Logo" width="50px" height="50px"/>
+      <Divider borderColor="#000000" mt="10px" ml={{ base: 10, lg: "67px" }} height="1px" width={{ base: "90%", md: "95%" }} />
 
-            <Text fontSize="2xl" fontWeight="bold" fontFamily="'Noto Sans', sans-serif" color="#0E5674">All Guidelines</Text>
-        </Flex>
-        <Divider borderColor="#000000" mt="10px" mx="20px" ml="67px"  height="1px" width="1265.01px"/>
+      <Box mt={6} pl={{ base: 10, md: 16 }}>
+       <HStack spacing={4}>
+  <Button
+    bg={filterType === 'All' ? "#0E5674" : "white"}
+    color={filterType === 'All' ? "white" : "black"}
+    border="1px solid black"
+    _hover={{ bg: "#0a3f59", color: "white" }}
+    fontFamily="Circular Std"
+    size="sm"
+    onClick={() => {
+      setFilterType('All');
+      setFilterValue(null);
+    }}
+  >
+    All
+  </Button>
 
+  <Menu>
+    <MenuButton
+      as={Button}
+      rightIcon={<ChevronDownIcon />}
+      border="1px solid black"
+      borderRadius="md"
+      bg={filterType === 'Organization' ? "#0E5674" : "white"}
+      color={filterType === 'Organization' ? "white" : "black"}
+      size="sm"
+      _hover={{ bg: "#0a3f59", color: "white" }}
+      fontFamily="Circular Std"
+    >
+      {filterType === 'Organization' && filterValue ? filterValue : "Organisation"}
+    </MenuButton>
+    <MenuList>
+      {organisations.map((org, idx) => (
+        <MenuItem
+          key={idx}
+          onClick={() => {
+            setFilterType('Organization');
+            setFilterValue(org);
+          }}
+        >
+          {org}
+        </MenuItem>
+      ))}
+    </MenuList>
+  </Menu>
 
-         
-        <Box mt={4} ml="60px">
-        <HStack justify="space-between">
-          <HStack>
-           <Button bg="#0E5674" color="white" _hover={{ bg: "#0a3f59" }} size="sm">All</Button>
-            
-           <Menu>
-                    <MenuButton
-                      as={Button}
-                      variant="ghost"
-                      rightIcon={<ChevronDownIcon />}
-                      border="1px solid black"
-                      borderRadius="md"
-                      bg="white"
-                      color="black"
-                      size="sm"
-                    _hover={{ bg: "gray.100" }}
-                    >
-                     Organisation
-                    </MenuButton>
-                    <MenuList>
-                      <MenuItem>Organisation</MenuItem>
-                    
-                    </MenuList>
-                    </Menu>
-                    <Menu>
-                      <MenuButton
-                        as={Button}
-                        variant="ghost"
-                        rightIcon={<ChevronDownIcon />}
-                        border="1px solid black"
-                        borderRadius="md"
-                        bg="white"
-                        color="black"
-                        size="sm"
-                        _hover={{ bg: "gray.100" }}
-                      >
-                      Speciality
-                      </MenuButton>
-                      <MenuList>
-                        <MenuItem>Speciality</MenuItem>
-                      
-                      </MenuList>
-                    </Menu>
-          </HStack>
-        </HStack>
+  <Menu>
+    <MenuButton
+      as={Button}
+      rightIcon={<ChevronDownIcon />}
+      border="1px solid black"
+      borderRadius="md"
+      bg={filterType === 'Speciality' ? "#0E5674" : "white"}
+      color={filterType === 'Speciality' ? "white" : "black"}
+      size="sm"
+      _hover={{ bg: "#0a3f59", color: "white" }}
+      fontFamily="Circular Std"
+    >
+      {filterType === 'Speciality' && filterValue ? filterValue : "Speciality"}
+    </MenuButton>
+    <MenuList>
+      {specialities.map((spec, idx) => (
+        <MenuItem
+          key={idx}
+          onClick={() => {
+            setFilterType('Speciality');
+            setFilterValue(spec);
+          }}
+        >
+          {spec}
+        </MenuItem>
+      ))}
+    </MenuList>
+  </Menu>
+</HStack>
 
-        
-
-        {allGuidelines.map((g, idx) => (
+        {filteredGuidelines.map((g, idx) => (
           <Box key={idx} mb={6} mt={6}>
-            <Heading fontWeight="bold" size="md" color="#0E5674" mb={1}>{g.source}</Heading>
-            <Text fontSize="md" color="#303030">{g.date}</Text>
-            <Heading size="md" mt={2}>{g.title}</Heading>
-            <Text fontSize="md" mt={2} color="#303030">{g.authors}</Text>
-            <Text fontSize="md" mt={2} color="#303030"  fontStyle="italic" isTruncated>{g.url}</Text>
+            <Heading fontWeight="bold" size={{ base: "sm", lg: "md" }} fontFamily="Noto Sans" color="#0E5674" mb={1}>
+              {g.source}
+            </Heading>
+            <Text fontSize={{ base: "xs", lg: "md" }} color="#303030">{g.date}</Text>
+            <Heading size={{ base: "xs", lg: "md" }} mt={2}>{g.title}</Heading>
+            <Text fontSize={{ base: "xs", lg: "md" }} mt={2} color="#303030">{g.authors}</Text>
+            <Link href={g.url} isExternal fontStyle="italic" color="#303030" fontSize={{ base: "sm", lg: "md" }}>
+              {g.url}
+            </Link>
           </Box>
         ))}
       </Box>
-      <Divider borderColor="#000000" mt="10px" mx="20px" ml="67px"  height="1px" width="1265.01px"/>
+
+      <Divider borderColor="#000000" mt="10px" ml={{ base: 10, lg: "67px" }} height="1px" width={{ base: "90%", md: "95%" }} />
     </Box>
   );
 };

@@ -1,0 +1,13 @@
+{
+  "rowLabels": ["Patients", "Clinicians", "Policy"],
+  "strongRecommendation": [
+    "Most individuals in this situation would want the recommended course of action, and only a small proportion would not.",
+    "Most individuals should receive the intervention. Adherence to this recommendation according to the guideline could be used as a quality criterion or performance indicator. Formal decision aids are not likely to be needed to help individuals make decisions consistent with their values and preferences.",
+    "The recommendation can be adopted as policy in most situations."
+  ],
+  "conditionalRecommendation": [
+    "The majority of individuals in this situation would want the suggested course of action, but many would not.",
+    "Recognize that different choices will be appropriate for individual patients and that you must help each patient arrive at a management decision consistent with his or her values and preferences. Decision aids may be useful in helping individuals to make decisions consistent with their values and preferences.",
+    "Policymaking will require substantial debate and involvement of various stakeholders."
+  ]
+}

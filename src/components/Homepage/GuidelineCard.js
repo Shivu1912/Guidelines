@@ -1,28 +1,34 @@
 import { Box, Button, Image, Text } from '@chakra-ui/react';
+import { useRouter } from 'next/router';
 
-const GuidelineCard = ({ title, authors, source, date, image }) => {
+const GuidelineCard = ({ id, title, authors, source, date, image }) => {
+  const router = useRouter();
+
+  const handleReadMore = () => {
+    router.push(`/guideline/${id}`);
+  };
+
   return (
     <Box
       bg="#F2FAFD"
-      w="100%"
-      maxW="420px"
+      w={{ base: '300px', md: '360px', lg: '420px' }}
+      h={{ base: '200px', md: '200px', lg: '230px' }}
       borderRadius="md"
       boxShadow="sm"
-      p={5}
-      mt={6}
-      position="relative" 
+      p={{ base: 4, md: 5 }}
+      mt={2}
+      position="relative"
     >
-     
-      <Box> 
-        <Text fontWeight="bold" fontSize="lg" mb={2} color="#000000">
+      <Box>
+        <Text fontWeight="bold" fontSize={{ base: 'sm', md: 'md', lg: 'lg' }} mb={2} color="#000000">
           {title}
         </Text>
 
-        <Text fontSize="sm" mb={2} color="#262626" pr="100px">
+        <Text fontSize={{ base: 'xs', lg: 'sm' }} mb={2} color="#262626" pr={{ base: 0, lg: '100px' }}>
           {authors}
         </Text>
 
-        <Text fontSize="sm" fontWeight="semibold" color="#303030">
+        <Text fontSize={{ base: 'xs', lg: 'sm' }} fontWeight="semibold" color="#303030">
           {source} | {date}
         </Text>
 
@@ -34,6 +40,7 @@ const GuidelineCard = ({ title, authors, source, date, image }) => {
           _hover={{ bg: "#0a3f59" }}
           px={6}
           borderRadius="md"
+          onClick={handleReadMore}
         >
           Read more
         </Button>
@@ -45,9 +52,8 @@ const GuidelineCard = ({ title, authors, source, date, image }) => {
         position="absolute"
         bottom="20px"
         right="20px"
-        maxH="120px"
-        maxW="90px"
-      
+        maxH={{ base: '80px', lg: '120px' }}
+        maxW={{ base: '60px', lg: '90px' }}
       />
     </Box>
   );

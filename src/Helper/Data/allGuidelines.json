@@ -1,0 +1,137 @@
+[
+  {
+    "source": "Medscape | Editorial",
+    "date": "February 29, 2024",
+    "title": "Type 2 Diabetes Mellitus Treatment & Management",
+    "authors": "Romesh Khardori, MD, PhD",
+    "url": "https://example.com/diabetes",
+    "organization": "Medscape",
+    "speciality": "Diabetes"
+  },
+  {
+    "source": "ACC | Opinion",
+    "date": "February 8, 2024",
+    "title": "Mitigating CVD Risk in the Postpartum Period",
+    "authors": "Lewey J, Beckie TM",
+    "url": "https://acc.org/postpartum-cvd",
+    "organization": "ACC",
+    "speciality": "Cardiology"
+  },
+  {
+    "source": "AHA | Guidelines",
+    "date": "March 15, 2024",
+    "title": "Hypertension in Adults: Diagnosis and Management",
+    "authors": "Smith T, Johnson A",
+    "url": "https://aha.org/hypertension",
+    "organization": "AHA",
+    "speciality": "Hypertension"
+  },
+  {
+    "source": "ADA | Recommendations",
+    "date": "January 12, 2024",
+    "title": "Standards of Medical Care in Diabetes",
+    "authors": "ADA Panel",
+    "url": "https://diabetes.org/standards",
+    "organization": "ADA",
+    "speciality": "Diabetes"
+  },
+  {
+    "source": "ESC | Clinical Practice",
+    "date": "February 1, 2024",
+    "title": "Heart Failure Management Guidelines",
+    "authors": "Brown L, Nguyen P",
+    "url": "https://escardio.org/heart-failure",
+    "organization": "ESC",
+    "speciality": "Cardiology"
+  },
+  {
+    "source": "USPSTF | Review",
+    "date": "March 5, 2024",
+    "title": "Screening for Colorectal Cancer",
+    "authors": "USPSTF Panel",
+    "url": "https://uspreventiveservicestaskforce.org/colorectal",
+    "organization": "USPSTF",
+    "speciality": "Gastroenterology"
+  },
+  {
+    "source": "IDSA | Update",
+    "date": "April 10, 2024",
+    "title": "Antibiotic Stewardship in Hospitals",
+    "authors": "Green M, Patel R",
+    "url": "https://idsociety.org/antibiotics",
+    "organization": "IDSA",
+    "speciality": "Infectious Diseases"
+  },
+  {
+    "source": "CDC | Guidance",
+    "date": "February 20, 2024",
+    "title": "COVID-19 Prevention and Control",
+    "authors": "CDC Experts",
+    "url": "https://cdc.gov/covid19",
+    "organization": "CDC",
+    "speciality": "Infectious Diseases"
+  },
+  {
+    "source": "WHO | Position Paper",
+    "date": "January 18, 2024",
+    "title": "Global Strategy on Cervical Cancer",
+    "authors": "WHO Working Group",
+    "url": "https://who.int/cervical-cancer",
+    "organization": "WHO",
+    "speciality": "Oncology"
+  },
+  {
+    "source": "ASCO | Clinical Guidelines",
+    "date": "March 22, 2024",
+    "title": "Breast Cancer Screening and Treatment",
+    "authors": "ASCO Panel",
+    "url": "https://asco.org/breast-cancer",
+    "organization": "ASCO",
+    "speciality": "Oncology"
+  },
+  {
+    "source": "NICE | Guidance",
+    "date": "April 2, 2024",
+    "title": "Asthma Management in Adults and Children",
+    "authors": "NICE Review Team",
+    "url": "https://nice.org.uk/asthma",
+    "organization": "NICE",
+    "speciality": "Pulmonology"
+  },
+  {
+    "source": "ERS | Practice Guidelines",
+    "date": "February 27, 2024",
+    "title": "COPD Treatment Recommendations",
+    "authors": "White J, Lee K",
+    "url": "https://ersjournals.com/copd",
+    "organization": "ERS",
+    "speciality": "Pulmonology"
+  },
+  {
+    "source": "AGA | Clinical Update",
+    "date": "March 14, 2024",
+    "title": "Fecal Microbiota Transplantation for C. difficile",
+    "authors": "AGA Research Panel",
+    "url": "https://gastro.org/fmt",
+    "organization": "AGA",
+    "speciality": "Gastroenterology"
+  },
+  {
+    "source": "AAFP | Recommendations",
+    "date": "April 5, 2024",
+    "title": "Primary Care in Older Adults",
+    "authors": "AAFP Task Force",
+    "url": "https://aafp.org/geriatrics",
+    "organization": "AAFP",
+    "speciality": "Geriatrics"
+  },
+  {
+    "source": "JNC | National Guidelines",
+    "date": "March 8, 2024",
+    "title": "Blood Pressure Management in Adults",
+    "authors": "Jones R, Singh N",
+    "url": "https://jnc8.org/bloodpressure",
+    "organization": "JNC",
+    "speciality": "Hypertension"
+  }
+]

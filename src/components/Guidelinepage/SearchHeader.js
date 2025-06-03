@@ -1,19 +1,19 @@
-// src/components/layout/Header.js
+
 import React from 'react';
-import { Box, Flex, Image, InputGroup, InputLeftElement, Input, Divider, Button, Menu, MenuButton, MenuList, MenuItem, Icon } from '@chakra-ui/react';
+import { Box, Flex, Image, InputGroup, InputLeftElement, Input, Divider, Button, Menu, MenuButton, Avatar,MenuList, MenuItem, Icon } from '@chakra-ui/react';
 import { SearchIcon, ChevronDownIcon } from "@chakra-ui/icons";
 
 export const SearchHeader = () => {
 
   return (
 
-    <Box h="100px" bg="#D7F3FF4D">
+    <Box h= "100px"  bg="#D7F3FF4D">
  
-    <Flex  align="center" h="100px" px={4}>
+    <Flex align="center" h="100px" px={4} justifyContent="space-between">
    
-    <Image src="../assets/GC.webp" alt="GC Logo" width="150px" height="70px" />
+    <Image src="../assets/GC.webp" alt="GC Logo" width={{ base: "80px", lg: "150px" }} height={{ base: "50px", lg: "70px" }} />
 
-    <Box p={4} borderRadius="md" maxW="900px">
+    <Box p={4} borderRadius="md" w={{ base: "700px", lg: "900px" }}>
       <Flex
         align="center"
         border="1px solid"
@@ -21,7 +21,7 @@ export const SearchHeader = () => {
         borderRadius="md"
         overflow="hidden"
         bg="white"
-        height="40px"
+        height={{ base: "25px", lg: "40px" }}
         boxShadow="md"
       >
         <InputGroup flex="1">
@@ -30,7 +30,7 @@ export const SearchHeader = () => {
           </InputLeftElement>
           <Input
             type="text"
-            placeholder="Search guidelines title, organisation or condition..."
+            placeholder="Search..."
             border="none"
             _focus={{ outline: "none", boxShadow: "none" }}
           />
@@ -54,6 +54,8 @@ export const SearchHeader = () => {
         </Menu>
       </Flex>
     </Box>
+   
+    <Avatar size="lg"  src="../assets/user.webp" />
   </Flex>
 </Box>
   );
