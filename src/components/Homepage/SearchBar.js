@@ -18,7 +18,6 @@ const SearchBar= () =>  {
   return (
     <Box borderRadius="md" p={{ base: 4, lg: 4 }} maxW="900px" mx={{ base: "50px", lg: "280px" }} height={{ base: "50px", lg: "100px" }}>
       <Flex
-      
         align="center"
         border="1px solid"
         borderColor="gray.200"
@@ -27,6 +26,7 @@ const SearchBar= () =>  {
         bg="white"
         height={{ base: "40px", lg: "60px" }}
         boxShadow="md"
+        p={{ base: 2, md: 0 }}
       >
        
         <InputGroup flex="1" >
@@ -35,14 +35,15 @@ const SearchBar= () =>  {
           </InputLeftElement>
           <Input
             type="text"
-            placeholder="Search guidelines title, organisation or condition..."
+            placeholder="Search...."
             border="none"
             _focus={{ outline: "none", boxShadow: "none" }}
-            
+             fontSize={{ base: 'sm', md: 'md' }}
+            py={{ base: 2, md: 0 }}   
           />
         </InputGroup>
 
-        <Divider orientation="vertical" height="30px" mx={2}/>
+        <Divider orientation="vertical" height="30px"  mx={{ base: 0, md: 2 }}/>
 
         <Menu>
           <MenuButton
@@ -52,6 +53,7 @@ const SearchBar= () =>  {
             rightIcon={<ChevronDownIcon />}
             _hover={{ bg: "transparent" }}
             fontFamily="Inter"
+             fontSize={{ base: 'sm', md: 'md' }}
           >
             Guidelines
           </MenuButton>

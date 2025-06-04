@@ -49,11 +49,10 @@ const QuestionBar = () => (
              bg="#0E5674"
              color="white"
              as={Button}
-             
              fontWeight="bold"
              _hover={{ bg: "gray" }}
              fontFamily="Inter"
-             size={{ base: "sm", lg: "md" }}
+             size={{ base: "xs", lg: "md" }}
              mr={{ base: 2, lg: 4 }}
              my={{ base: 2, lg: 6 }}
 

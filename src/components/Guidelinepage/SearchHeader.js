@@ -9,23 +9,24 @@ export const SearchHeader = () => {
 
     <Box h= "100px"  bg="#D7F3FF4D">
  
-    <Flex align="center" h="100px" px={4} justifyContent="space-between">
+    <Flex align="center" h="100px" px={2} justifyContent="space-between">
    
     <Image src="../assets/GC.webp" alt="GC Logo" width={{ base: "80px", lg: "150px" }} height={{ base: "50px", lg: "70px" }} />
 
-    <Box p={4} borderRadius="md" w={{ base: "700px", lg: "900px" }}>
+    <Box px={4} py={2} borderRadius="md" w={{ base: "700px", lg: "900px" }}>
       <Flex
+        direction={{ base: 'row', md: 'row' }}
         align="center"
         border="1px solid"
         borderColor="gray.200"
         borderRadius="md"
-        overflow="hidden"
         bg="white"
-        height={{ base: "25px", lg: "40px" }}
+        height={{ base: "30px", lg: "40px" }}
         boxShadow="md"
+        
       >
-        <InputGroup flex="1">
-          <InputLeftElement pointerEvents="none">
+        <InputGroup flex="1" >
+          <InputLeftElement>
             <Icon as={SearchIcon} color="gray.400" />
           </InputLeftElement>
           <Input
@@ -33,10 +34,11 @@ export const SearchHeader = () => {
             placeholder="Search..."
             border="none"
             _focus={{ outline: "none", boxShadow: "none" }}
+            fontSize={{ base: 'sm', md: 'md' }}
           />
         </InputGroup>
 
-        <Divider orientation="vertical" height="30px" mx={2} />
+        <Divider orientation="vertical" height="30px"   mx={{ base: 0, md: 2 }}/>
 
         <Menu>
           <MenuButton
@@ -45,6 +47,8 @@ export const SearchHeader = () => {
             fontWeight="bold"
             rightIcon={<ChevronDownIcon />}
             _hover={{ bg: "transparent" }}
+            fontSize={{ base: 'sm', md: 'md' }}
+          
           >
             Guidelines
           </MenuButton>
@@ -55,7 +59,7 @@ export const SearchHeader = () => {
       </Flex>
     </Box>
    
-    <Avatar size="lg"  src="../assets/user.webp" />
+    <Avatar size={{ base: 'md', lg: 'lg' }} src="../assets/user.webp" />
   </Flex>
 </Box>
   );

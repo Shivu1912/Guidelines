@@ -1,19 +1,21 @@
 import { useEffect, useState } from 'react';
-import { Box, Image, Text,Flex ,Textarea, Avatar,Button,Stack} from '@chakra-ui/react';
-import commentData from '../../Helper/Data/comments.json';
+import { Box, Image, Text, Flex, Textarea, Avatar, Button, Stack } from '@chakra-ui/react';
+import guidelines from '../../Helper/Data/guideline.json';
 
- 
- const CommentBar= () =>{
+const CommentBar = () => {
+  const [comments, setComments] = useState([]);
 
- const [comments, setcomments] = useState([]);
-  
-     useEffect(() => {
-        setcomments( commentData);
-      }, []);
+  useEffect(() => {
+    const selectedGuideline = guidelines.find((g) => g.id === "1")
+    if (selectedGuideline && selectedGuideline.comments) {
+      setComments(selectedGuideline.comments);
+    }
+  }, []);
+
 
   return (
  <Box my={6}>
-       <Flex ml={{ base: 10, lg: "67px" }} mt="30px"gap="10px" align="center">
+       <Flex ml={{ base: 6, lg: "67px" }} mt="30px"gap="10px" align="center">
         <Image src="../assets/msg.webp" alt="New Logo" boxSize={{ base: "20px", lg: "30px" }} />
         <Text
           fontSize={{ base: "lg", lg: "xl" }}
@@ -55,13 +57,13 @@ import commentData from '../../Helper/Data/comments.json';
       </Text>
        
       <Stack spacing={6} mt={{ base: 1, lg: 4 }} >
-        {commentData.map((comment, index) => (
+        {comments.map((comment, index) => (
           <Flex   w={{ base: "300px", lg: "700px" }}  key={index} gap={4} align="flex-start">
             <Avatar size={{ base: "sm", lg: "md" }}  mt={4} src={comment.avatar} />
             <Box  bg="#D9D9D966" px={{ base: 2, lg: 4 }}  mt={4} h={{ base: "90px", lg: "95px" }}  py={2} borderRadius="md" flex="1">
               <Text fontWeight="bold" fontSize={{ base: "sm", lg: "md" }}>{comment.name}</Text>
               <Text fontSize={{ base: "xs", lg: "sm" }} mt={1}>{comment.text}</Text>
-              <Flex mt={3}  gap={4} fontSize={{ base: "xs", lg: "sm" }} color="#000000">
+              <Flex mt={{ base: 2, lg: 4 }} gap={{ base: 2, lg: 4 }} fontSize={{ base: "xs", lg: "sm" }} color="#000000">
                 <Text>{comment.time}</Text>
                 <Text cursor="pointer">Like</Text>
                 <Text cursor="pointer">Reply</Text>

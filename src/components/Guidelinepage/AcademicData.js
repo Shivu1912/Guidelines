@@ -3,8 +3,8 @@ import { Box, Image, Text,Flex ,Link} from '@chakra-ui/react';
  
  const AcademicData= () =>(
  <Box my={6}>
-       <Box ml={{ base: 10, lg: "67px" }} mb={2}>
-      <Text  fontSize={{ base: "sm", lg: "20px" }}>
+       <Box ml={{ base: 6, lg: "67px" }} mb={2}>
+      <Text  fontSize={{ base: "xs", lg: "20px" }}>
         Reference:{' '}
         <Link
           href="https://pubmed.ncbi.nlm.nih.gov/38395525/#"
@@ -16,7 +16,7 @@ import { Box, Image, Text,Flex ,Link} from '@chakra-ui/react';
       </Text>
       </Box>
 
-       <Flex ml={{ base: 10, lg: "67px" }} mt="30px"gap="10px" align="center">
+       <Flex ml={{ base: 6, lg: "67px" }} mt="30px"gap="10px" align="center">
         <Image src="../assets/hand.webp" alt="New Logo" boxSize={{ base: "20px", lg: "30px" }} />
         <Text
           fontSize={{ base: "lg", lg: "xl" }}
@@ -36,8 +36,8 @@ import { Box, Image, Text,Flex ,Link} from '@chakra-ui/react';
           fontFamily="'Noto Sans', sans-serif"
           color="#000000"
           mt={{ base: "10px", lg: "30px" }}
-          p={{ base: 2, md: 4, lg: 6 }}
-          maxW={{ base: "500px", md: "500px", lg: "800px" }}
+          p={{ base: 2,  lg: 6 }}
+          maxW={{ base: "500px",  lg: "800px" }}
           textAlign="left"
          
         >
