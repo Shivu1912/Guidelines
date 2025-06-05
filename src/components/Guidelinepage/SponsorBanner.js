@@ -1,25 +1,16 @@
 import { Box, Image, Text, Button } from '@chakra-ui/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { useRouter } from 'next/router';
 import { Pagination } from 'swiper/modules';
-import guidelineData from '../../Helper/Data/guideline.json'; 
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 
+const SponsorBannerSlider = ({ data }) => {
+  if (!data || !data.sponsorBanners || data.sponsorBanners.length === 0) {
+    return <Text ml={4}>No banners found</Text>;
+  }
 
-const SponsorBannerSlider = () => {
-  const router = useRouter();
-  const { id } = router.query;
-
-  const guideline = guidelineData.find((g) => g.id === id);
-
-const sponsorBanners = guideline ? guideline.sponsorBanners : [];
-
-
-  if (!sponsorBanners || sponsorBanners.length === 0) {
-    return <Text>No banners found</Text>;
-  } 
+  const { sponsorBanners } = data;
 
   return (
     <Swiper
@@ -36,7 +27,7 @@ const sponsorBanners = guideline ? guideline.sponsorBanners : [];
               ml={{ base: '40px', lg: '50px' }}
               src={banner.image}
               alt="Sponsor Banner"
-              w={{ base: '380px', lg: '1400px' }}
+              w={{ base: '380px', lg: '1600px' }}
               h={{ base: '200px', lg: '300px' }}
               objectFit="cover"
               borderRadius="md"

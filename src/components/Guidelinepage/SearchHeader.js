@@ -23,7 +23,6 @@ export const SearchHeader = () => {
         bg="white"
         height={{ base: "30px", lg: "40px" }}
         boxShadow="md"
-        
       >
         <InputGroup flex="1" >
           <InputLeftElement>

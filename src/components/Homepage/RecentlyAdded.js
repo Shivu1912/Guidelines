@@ -15,7 +15,7 @@ const RecentlyAdded = () => {
 
   return (
     <Box my={6}>
-      {/* Header */}
+     
       <Flex ml={{ base: 10, lg: "67px" }} mt="60px"gap="10px" align="center">
         <Image src="../assets/New.webp" alt="New Logo" boxSize={{ base: "30px", lg: "50px" }} />
         <Text

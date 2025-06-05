@@ -1,16 +1,7 @@
-import { useEffect, useState } from 'react';
 import { Box, Image, Text, Flex, Textarea, Avatar, Button, Stack } from '@chakra-ui/react';
-import guidelines from '../../Helper/Data/guideline.json';
 
-const CommentBar = () => {
-  const [comments, setComments] = useState([]);
-
-  useEffect(() => {
-    const selectedGuideline = guidelines.find((g) => g.id === "1")
-    if (selectedGuideline && selectedGuideline.comments) {
-      setComments(selectedGuideline.comments);
-    }
-  }, []);
+const CommentBar = ({ data }) => {
+  const comments = data?.comments || [];
 
 
   return (

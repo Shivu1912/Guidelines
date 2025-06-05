@@ -1,28 +1,20 @@
-import { useRouter } from 'next/router';
+
 import { Box, Table, Thead, Tbody, Tr, Th, Td, Text,Flex,Image } from '@chakra-ui/react';
-import guidelineData from '../../Helper/Data/guideline.json';
 
 
-const ContemporaryData = () => {
-  const router = useRouter();
-  const { id } = router.query;
 
-  const guideline = guidelineData.find((g) => g.id === id);
-
-  if (!guideline) {
-    return <Text ml={4}>Loading or guideline not found.</Text>;
-  }
-
-  if (!guideline?.contemporaryData) {
+const ContemporaryData = ({ data }) => {
+  if (!data?.contemporaryData) {
     return <Text ml={4}>Contemporary data not available.</Text>;
   }
 
   const {
     rowLabels,
     strongRecommendation,
-    conditionalRecommendation
-  } = guideline.contemporaryData;
+    conditionalRecommendation,
+  } = data.contemporaryData;
 
+  
   return (
     <Box  mt={6}>
        <Flex ml={{ base: 6, lg: "67px" }} mt={{ base: 4, lg: "30px" }}gap="10px" align="center">

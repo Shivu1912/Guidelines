@@ -45,12 +45,14 @@
       }
     ],
 
-   "changedata": [
+     "watchSection": {
+    "videoImage": "/assets/video.webp",
+    "changeData": [
        "The guideline panel made 7 recommendations, including the use of fecal microbiota-based therapies in specific scenarios such as recurrent C difficile infection and severe or fulminant cases not responding to standard antibiotics.",
        "Recommendations vary based on the immunocompetence of patients, suggesting select use of therapies in certain populations and against their use in severely immunocompromised individuals.",
        "While fecal microbiota-based therapies are effective for preventing recurrent C difficile in select patients, they are not yet recommended for other gastrointestinal conditions except within the context of clinical trials."
-    ],
-
+    ]
+},
     "contemporaryData": {
       "rowLabels": ["Patients", "Clinicians", "Policy"],
       "strongRecommendation": [
@@ -63,7 +65,14 @@
         "Recognize that different choices will be appropriate for individual patients and that you must help each patient arrive at a management decision consistent with his or her values and preferences. Decision aids may be useful in helping individuals to make decisions consistent with their values and preferences.",
         "Policymaking will require substantial debate and involvement of various stakeholders."
       ]
-      
+    },
+
+    
+    "academicData": {
+         "referenceLink": "https://pubmed.ncbi.nlm.nih.gov/38395525/#",
+         "referenceText": "https://pubmed.ncbi.nlm.nih.gov/38395525/#",
+         "supportImage": "../assets/pfizer.webp",
+         "description": "Pfizer, founded in 1849, is a global pharmaceutical leader known for groundbreaking contributions to healthcare. Our guidelines, supported by Pfizer's legacy, prioritize evidence-based practices for optimal patient care, reflecting a shared commitment to advancing medical standards."
     },
 
     "comments": [
@@ -79,6 +88,7 @@
         "time": "3 Days ago",
         "avatar": "../assets/user3.webp"
       }
+      
     ]
   },
 
@@ -129,11 +139,14 @@
       }
     ],
 
-    "changedata": [
+    "watchSection": {
+    "videoImage": "/assets/video.webp",
+    "changeData": [
        "The guideline panel made 7 recommendations, including the use of fecal microbiota-based therapies in specific scenarios such as recurrent C difficile infection and severe or fulminant cases not responding to standard antibiotics.",
        "Recommendations vary based on the immunocompetence of patients, suggesting select use of therapies in certain populations and against their use in severely immunocompromised individuals.",
        "While fecal microbiota-based therapies are effective for preventing recurrent C difficile in select patients, they are not yet recommended for other gastrointestinal conditions except within the context of clinical trials."
-    ],
+    ]
+},
 
     "contemporaryData": {
       "rowLabels": ["Patients", "Clinicians", "Policy"],
@@ -149,6 +162,13 @@
       ]
       
     },
+
+    "academicData": {
+        "referenceLink": "https://pubmed.ncbi.nlm.nih.gov/38395525/#",
+        "referenceText": "https://pubmed.ncbi.nlm.nih.gov/38395525/#",
+        "supportImage": "../assets/pfizer.webp",
+        "description": "Pfizer, founded in 1849, is a global pharmaceutical leader known for groundbreaking contributions to healthcare. Our guidelines, supported by Pfizer's legacy, prioritize evidence-based practices for optimal patient care, reflecting a shared commitment to advancing medical standards."
+  },
 
     "comments": [
       {
@@ -200,7 +220,7 @@
       "While fecal microbiota-based therapies are effective for preventing recurrent C difficile in select patients, they are not yet recommended for other gastrointestinal conditions except within the context of clinical trials."
     ],
 
-    "sponsorBanner": [
+    "sponsorBanners": [
       {
         "image": "../assets/bannerpfizer.webp",
         "title": "This page is supported by Pfizer as part of their educational initiative",
@@ -212,12 +232,15 @@
         "description": "This is another educational message from a healthcare partner."
       }
     ],
-
-    "changedata": [
+    
+    "watchSection": {
+    "videoImage": "/assets/video.webp",
+    "changeData": [
        "The guideline panel made 7 recommendations, including the use of fecal microbiota-based therapies in specific scenarios such as recurrent C difficile infection and severe or fulminant cases not responding to standard antibiotics.",
        "Recommendations vary based on the immunocompetence of patients, suggesting select use of therapies in certain populations and against their use in severely immunocompromised individuals.",
        "While fecal microbiota-based therapies are effective for preventing recurrent C difficile in select patients, they are not yet recommended for other gastrointestinal conditions except within the context of clinical trials."
-    ],
+    ]
+},
 
     "contemporaryData": {
       "rowLabels": ["Patients", "Clinicians", "Policy"],
@@ -232,6 +255,13 @@
         "Policymaking will require substantial debate and involvement of various stakeholders."
       ]
       
+    },
+
+    "academicData": {
+       "referenceLink": "https://pubmed.ncbi.nlm.nih.gov/38395525/#",
+       "referenceText": "https://pubmed.ncbi.nlm.nih.gov/38395525/#",
+        "supportImage": "../assets/pfizer.webp",
+        "description": "Pfizer, founded in 1849, is a global pharmaceutical leader known for groundbreaking contributions to healthcare. Our guidelines, supported by Pfizer's legacy, prioritize evidence-based practices for optimal patient care, reflecting a shared commitment to advancing medical standards."
     },
 
     "comments": [

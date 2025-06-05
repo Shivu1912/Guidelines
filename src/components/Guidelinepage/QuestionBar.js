@@ -1,6 +1,9 @@
-import { Box, Input, Button, Text,Flex, Image,InputGroup } from '@chakra-ui/react';
+import { Box, Input, Button, Text, Flex, Image, InputGroup } from '@chakra-ui/react';
 
-const QuestionBar = () => (
+const QuestionBar = ({ data }) => {
+  const guidelineTitle = data?.title || "this guideline";
+ 
+  return (
   <Box bg="#D7F3FF4D" mx={{ base: 8,lg: "67px" }} my={{ base: 4, lg: 8}}  p={{ base: 2, lg: 4 }}  position="relative"
     borderRadius="md">
         
@@ -12,9 +15,9 @@ const QuestionBar = () => (
       align="center"
       gap="10px"
     >
-            <Image src="../assets/chat.webp" alt="New Logo" boxSize={{ base: "16px", lg: "20px" }} />
+            <Image src="../assets/chat.webp" alt="New Logo" boxSize={{ base: "16px", lg: "25px" }} />
             <Text
-              fontSize={{ base: "md", lg: "lg" }}
+              fontSize={{ base: "md", lg: "xl" }}
               fontWeight="bold"
               fontFamily="'Noto Sans', sans-serif"
               color="#0E5674"
@@ -22,7 +25,7 @@ const QuestionBar = () => (
              Ask GC
             </Text>
           </Flex> 
-    <Text  mt={{ base: 6, lg: 10 }} mb={2} fontSize={{ base: "md", lg: "lg" }} align="center">Ask any question relating to the <b>“AGA Clinical Practice Guideline on Fecal Microbiota-Based Therapies for Select Gastrointestinal Diseases”</b> guidelines</Text>
+    <Text  mt={{ base: 6, lg: 10 }} mb={2} fontSize={{ base: "md", lg: "xl" }} align="center">Ask any question relating to the <b>““{guidelineTitle}””</b> guidelines</Text>
   <Box borderRadius="md" p={{ base: 2, lg: 4 }} maxW="900px" mx={{ base: "50px", lg: "280px" }} height={{ base: "50px", lg: "100px" }}>
        <Flex
        
@@ -65,5 +68,6 @@ const QuestionBar = () => (
      </Box>
   </Box>
 );
+};
 
 export default QuestionBar;

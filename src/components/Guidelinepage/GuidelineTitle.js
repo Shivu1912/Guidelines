@@ -1,14 +1,8 @@
-import { useRouter } from 'next/router';
-import { Box, Heading, Text, Button, Stack } from '@chakra-ui/react';
-import guidelineData from '../../Helper/Data/guideline.json'; 
+import { Box, Heading, Text, Button, Stack ,Flex,Image} from '@chakra-ui/react';
+import Bookmark from '../../components/Guidelinepage/Bookmark';
 
-const GuidelineTitle = () => {
-  const router = useRouter();
-  const { id } = router.query;
-
-  const guideline = guidelineData.find((g) => g.id === id);
-
-  if (!guideline) {
+const GuidelineTitle = ({ data }) => {
+  if (!data) {
     return <Text ml={4}>Loading or guideline not found.</Text>;
   }
 
@@ -20,7 +14,7 @@ const GuidelineTitle = () => {
     authors,
     reviewedBy,
     views,
-  } = guideline;
+  } = data;
 
   return (
     <Box mx={{ base: 4, lg: 6 }} my={{ base: 4, lg: 6 }}>
@@ -60,13 +54,23 @@ const GuidelineTitle = () => {
           Reviewed by {reviewedBy}
         </Text>
 
-        <Stack direction="row" flexDirection="space-between" gap={5}>
-          <Text fontSize="md" color="#000000">👁️ {views} views</Text>
-          <Text fontSize="md" color="#000000">📄 Bookmark</Text>
+        <Stack direction="row" gap={{ base: 1, lg: 2 }}>
+          <Flex ml={{ base: 0, lg: 1 }} gap="5px" >
+                  <Image src="../assets/view.webp" mt={{ base: 1, lg: 0 }}alt="view Logo" boxSize={{ base: "16px", lg: "20px" }} />
+                  <Text
+                    fontSize={{ base: "sm", lg: "md" }}
+                    fontWeight="bold"
+                    color="#000000"
+                  > 
+                 {views} views
+                  </Text>
+                </Flex>
+          
+         <Bookmark />
         </Stack>
       </Stack>
     </Box>
   );
 };
 
-export default GuidelineTitle; 
+export default GuidelineTitle;
