@@ -7,9 +7,9 @@ export const SearchHeader = () => {
 
   return (
 
-    <Box h= "100px"  bg="#D7F3FF4D">
+    <Box h= {{ base: "80px", lg: "100px" }} bg="#D7F3FF4D">
  
-    <Flex align="center" h="100px" px={2} justifyContent="space-between">
+    <Flex align="center" h= {{ base: "80px", lg: "100px" }} px={2} justifyContent="space-between">
    
     <Image src="../assets/GC.webp" alt="GC Logo" width={{ base: "80px", lg: "150px" }} height={{ base: "50px", lg: "70px" }} />
 
@@ -24,7 +24,7 @@ export const SearchHeader = () => {
         height={{ base: "30px", lg: "40px" }}
         boxShadow="md"
       >
-        <InputGroup flex="1" >
+        <InputGroup flex="1">
           <InputLeftElement>
             <Icon as={SearchIcon} color="gray.400" />
           </InputLeftElement>
@@ -33,7 +33,7 @@ export const SearchHeader = () => {
             placeholder="Search..."
             border="none"
             _focus={{ outline: "none", boxShadow: "none" }}
-            fontSize={{ base: 'sm', md: 'md' }}
+            fontSize={{ base: 'xs', md: 'md' }}
           />
         </InputGroup>
 
@@ -46,7 +46,7 @@ export const SearchHeader = () => {
             fontWeight="bold"
             rightIcon={<ChevronDownIcon />}
             _hover={{ bg: "transparent" }}
-            fontSize={{ base: 'sm', md: 'md' }}
+            fontSize={{ base: 'xs', md: 'md' }}
           
           >
             Guidelines

@@ -14,10 +14,10 @@ const WatchSection = ({ data }) => {
 return (
 <Box my={6}>
      
-      <Flex ml={{ base: 6, lg: "67px" }} mt="60px"gap="10px" align="center">
-        <Image src="../assets/watch.webp" alt="New Logo" boxSize={{ base: "20px", lg: "40px" }} />
+      <Flex ml={{ base: 6, md: "67px" }} mt={{ base: "30px", md: "60px" }}gap="10px" align="center">
+        <Image src="../assets/watch.webp" alt="New Logo" boxSize={{ base: "20px", md: "40px" }} />
         <Text
-          fontSize={{ base: "xl", lg: "2xl" }}
+          fontSize={{ base: "xl", md: "2xl" }}
           fontWeight="bold"
           fontFamily="'Noto Sans', sans-serif"
           color="#0E5674"
@@ -26,12 +26,12 @@ return (
         </Text>
       </Flex>
 
-      <Box mt={{ base: 4, lg: 8 }}> <Image src={videoImage}  alt="Video" pl={{ base: "50px", lg: "70px" }} w={{ base: "300px", lg: "800px" }} h={{ base: "150px", lg: "400px" }}/></Box>
+      <Box mt={{ base: 4, md: 6 }}> <Image src={videoImage}  alt="Video" pl={{ base: "50px", md: "100px" }} w={{ base: "300px", md: "800px" }} h={{ base: "150px", lg: "400px" }}/></Box>
 
-       <Flex ml={{ base: 6, lg: "67px" }} mt="30px"gap="10px" align="center">
-        <Image src="../assets/que.webp" alt="New Logo" boxSize={{ base: "20px", lg: "30px" }} />
+       <Flex ml={{ base: 6, md: "67px" }} mt="30px"gap="10px" align="center">
+        <Image src="../assets/que.webp" alt="New Logo" boxSize={{ base: "20px", md: "30px" }} />
         <Text
-          fontSize={{ base: "lg", lg: "xl" }}
+          fontSize={{ base: "lg", md: "xl" }}
           fontWeight="bold"
           fontFamily="'Noto Sans', sans-serif"
           color="#0E5674"
@@ -39,7 +39,7 @@ return (
           What Changed?
         </Text>
       </Flex>
-       <Box  mx={{ base: "50px", lg: "120px" }} my={{ base: 2, lg: 4 }} fontSize={{base: "md", lg: "xl"}}> 
+       <Box  mx={{ base: "50px",md: "120px" }} my={{ base: 2,md: 4 }} fontSize={{base: "md", md: "xl"}}> 
           <ReactMarkdown  components={{
             li: ({ children }) => <li style={{ marginBottom: '4px', fontFamily:'Inter'}}>{children}</li>
           }}>

@@ -4,7 +4,7 @@ const QuestionBar = ({ data }) => {
   const guidelineTitle = data?.title || "this guideline";
  
   return (
-  <Box bg="#D7F3FF4D" mx={{ base: 8,lg: "67px" }} my={{ base: 4, lg: 8}}  p={{ base: 2, lg: 4 }}  position="relative"
+  <Box bg="#D7F3FF4D" ml={{ base: 6,md: "30px" }} mr={{ base: 2,md: "20px" }}  my={{ base: 4,md: 8}}  p={{ base: 2,md: 4 }}  position="relative"
     borderRadius="md">
         
    <Flex
@@ -15,9 +15,9 @@ const QuestionBar = ({ data }) => {
       align="center"
       gap="10px"
     >
-            <Image src="../assets/chat.webp" alt="New Logo" boxSize={{ base: "16px", lg: "25px" }} />
+            <Image src="../assets/chat.webp" alt="New Logo" boxSize={{ base: "16px", md: "25px" }} />
             <Text
-              fontSize={{ base: "md", lg: "xl" }}
+              fontSize={{ base: "md", md: "xl" }}
               fontWeight="bold"
               fontFamily="'Noto Sans', sans-serif"
               color="#0E5674"
@@ -25,8 +25,8 @@ const QuestionBar = ({ data }) => {
              Ask GC
             </Text>
           </Flex> 
-    <Text  mt={{ base: 6, lg: 10 }} mb={2} fontSize={{ base: "md", lg: "xl" }} align="center">Ask any question relating to the <b>““{guidelineTitle}””</b> guidelines</Text>
-  <Box borderRadius="md" p={{ base: 2, lg: 4 }} maxW="900px" mx={{ base: "50px", lg: "280px" }} height={{ base: "50px", lg: "100px" }}>
+    <Text  mt={{ base: 6, md: 10 }} mb={2} fontSize={{ base: "sm", md: "xl" }} align="center">Ask any question relating to the <b>““{guidelineTitle}””</b> guidelines</Text>
+  <Box borderRadius="md" p={{ base: 2,md: 4 }} maxW="900px" mx={{ base: "50px", md: "280px" }} height={{ base: "50px",md: "100px" }}>
        <Flex
        
          align="center"
@@ -35,11 +35,11 @@ const QuestionBar = ({ data }) => {
          borderRadius="2px"
          overflow="hidden"
          bg="white"
-         height={{ base: "40px", lg: "60px" }}
+         height={{ base: "30px", md: "60px" }}
          boxShadow="md"
        >
         
-         <InputGroup flex="1">
+         <InputGroup flex="1"  size={{ base: "xs",md: "lg" }}>
            <Input
              type="text"
              placeholder="Type your question..."
@@ -55,9 +55,9 @@ const QuestionBar = ({ data }) => {
              fontWeight="bold"
              _hover={{ bg: "gray" }}
              fontFamily="Inter"
-             size={{ base: "xs", lg: "md" }}
-             mr={{ base: 2, lg: 4 }}
-             my={{ base: 2, lg: 6 }}
+             size={{ base: "xs",md: "md" }}
+             mr={{ base: 2,md: 4 }}
+             my={{ base: 4, md: 6 }}
 
            >
              Get Answer Now

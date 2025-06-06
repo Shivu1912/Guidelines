@@ -11,49 +11,49 @@ const GuidelineCard = ({ id, title, authors, source, date, image }) => {
   return (
     <Box
       bg="#F2FAFD"
-      w={{ base: '300px', md: '360px', lg: '420px' }}
-      h={{ base: '200px', md: '200px', lg: '230px' }}
+      w={{ base: '200px', md: '420px' }}
+      h={{ base: '130px', md: '230px' }}
       borderRadius="md"
       boxShadow="sm"
-      p={{ base: 4, md: 5 }}
-      mt={2}
+      p={{ base: 2, md: 5 }}
+      mt={{ base: "2px", md: 2 }}
       position="relative"
     >
       <Box>
-        <Text fontWeight="bold" fontSize={{ base: 'sm', md: 'md', lg: 'lg' }} mb={2} color="#000000">
+        <Text fontWeight="bold" fontSize={{ base: "10px", md: "lg" }} mb={{ base: "2px", md: 2 }} color="#000000">
           {title}
         </Text>
 
-        <Text fontSize={{ base: 'xs', lg: 'sm' }} mb={2} color="#262626" pr={{ base: 0, lg: '100px' }}>
+        <Text fontSize={{ base: '10px',  md: 'md' }} mb={{ base: "2px", md: 2 }} color="#262626" pr={{ base: 0,  md: '100px' }}>
           {authors}
         </Text>
 
-        <Text fontSize={{ base: 'xs', lg: 'sm' }} fontWeight="semibold" color="#303030">
+        <Text fontSize={{ base: '10px',  md: 'md' }} fontWeight="semibold" color="#303030">
           {source} | {date}
         </Text>
 
         <Button
-          mt={4}
-          size="sm"
-          bg="#0E5674"
-          color="white"
+           mt={{ base: "2px", md: 4 }}
+           fontSize={{ base: "8px",  md: 'md'}} 
+           height={{ base: "14px",  md: "30px" }} 
+           bg="#0E5674"
+           color="white"
           _hover={{ bg: "#0a3f59" }}
-          px={6}
           borderRadius="md"
           onClick={handleReadMore}
-        >
-          Read more
-        </Button>
+          >
+              Read More
+          </Button>
       </Box>
 
       <Image
         src={image}
         alt={title}
         position="absolute"
-        bottom="20px"
-        right="20px"
-        maxH={{ base: '80px', lg: '120px' }}
-        maxW={{ base: '60px', lg: '90px' }}
+        bottom={{ base: '5px', md: '20px' }}
+        right={{ base: '5px', md: '20px' }}
+        maxH={{ base: '50px',  md: '120px' }}
+        maxW={{ base: '60px',  md: '90px' }}
       />
     </Box>
   );

@@ -14,13 +14,13 @@ const ContemporaryData = ({ data }) => {
     conditionalRecommendation,
   } = data.contemporaryData;
 
-  
+
   return (
     <Box  mt={6}>
-       <Flex ml={{ base: 6, lg: "67px" }} mt={{ base: 4, lg: "30px" }}gap="10px" align="center">
-        <Image src="../assets/compare.webp" alt="New Logo" boxSize={{ base: "20px", lg: "30px" }} />
+       <Flex ml={{ base: 6, md: "67px" }} mt={{ base: 4,  md: "40px" }}gap="10px" align="center">
+        <Image src="../assets/compare.webp" alt="New Logo" boxSize={{ base: "20px", md: "30px" }} />
         <Text
-          fontSize={{ base: "lg", lg: "xl" }}
+          fontSize={{ base: "lg",  md: "xl" }}
           fontWeight="bold"
           fontFamily="'Noto Sans', sans-serif"
           color="#0E5674"
@@ -29,7 +29,7 @@ const ContemporaryData = ({ data }) => {
         </Text>
       </Flex>
 
-      <Box h={{ base: "auto", lg: "570px" }} w={{ base: "350px", lg: "800px" }} mx={{ base: 10, lg: "100px" }} my={{ base: 6, lg: 10 }}  border="4px solid #CDECF1">
+      <Box h={{ base: "auto", md: "570px" }} w={{ base: "350px",  md: "800px" }} mx={{ base: 10,  md: "100px" }} my={{ base: 4,  md: 8 }}  border="4px solid #CDECF1">
 
     <Box overflowX="auto">
   <Table variant="simple" minW="600px">
@@ -38,7 +38,7 @@ const ContemporaryData = ({ data }) => {
       <Th
         textAlign="center"
         color="black.500"
-        fontSize={{ base: "xs", md: "sm", lg: "md" }}
+        fontSize={{ base: "xs", md: "md" }}
         px={{ base: 2, md: 4 }}
         py={{ base: 1, md: 2 }}
       >
@@ -47,7 +47,7 @@ const ContemporaryData = ({ data }) => {
       <Th
         textAlign="center"
         color="black.500"
-        fontSize={{ base: "xs", md: "sm", lg: "md" }}
+        fontSize={{ base: "xs", md: "md" }}
         px={{ base: 2, md: 4 }}
         py={{ base: 1, md: 2 }}
       >
@@ -56,7 +56,7 @@ const ContemporaryData = ({ data }) => {
       <Th
         textAlign="center"
         color="black.500"
-        fontSize={{ base: "xs", md: "sm", lg: "md" }}
+        fontSize={{ base: "xs", md: "md" }}
         px={{ base: 2, md: 4 }}
         py={{ base: 1, md: 2 }}
       >

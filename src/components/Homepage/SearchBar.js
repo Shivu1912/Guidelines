@@ -16,7 +16,7 @@ import { SearchIcon, ChevronDownIcon } from "@chakra-ui/icons";
 
 const SearchBar= () =>  {
   return (
-    <Box borderRadius="md" p={{ base: 4, lg: 4 }} maxW="900px" mx={{ base: "50px", lg: "280px" }} height={{ base: "50px", lg: "100px" }}>
+    <Box borderRadius="md" p={{ base: 4,  md: 4 }} maxW="900px" mx={{ base: "30px", lg: "280px" }} height={{ base: "50px", md: "100px" }}>
       <Flex
         align="center"
         border="1px solid"
@@ -24,22 +24,22 @@ const SearchBar= () =>  {
         borderRadius="2px"
         overflow="hidden"
         bg="white"
-        height={{ base: "40px", lg: "60px" }}
+        height={{ base: "30px",  md: "60px" }}
         boxShadow="md"
-        p={{ base: 2, md: 0 }}
       >
        
-        <InputGroup flex="1" >
-          <InputLeftElement pointerEvents="none">
-            <Icon as={SearchIcon} color="gray.400" />
+        <InputGroup flex="1"  >
+          <InputLeftElement  >
+            <Icon as={SearchIcon} color="gray.400"  boxSize={{ base: 3, md: 6 }}/>
           </InputLeftElement>
           <Input
             type="text"
             placeholder="Search...."
+            pl={{ base: '30px', md: "40px" }}
             border="none"
             _focus={{ outline: "none", boxShadow: "none" }}
-             fontSize={{ base: 'sm', md: 'md' }}
-            py={{ base: 2, md: 0 }}   
+             fontSize={{ base: '10px', md: 'lg' }}
+            
           />
         </InputGroup>
 
@@ -53,7 +53,7 @@ const SearchBar= () =>  {
             rightIcon={<ChevronDownIcon />}
             _hover={{ bg: "transparent" }}
             fontFamily="Inter"
-             fontSize={{ base: 'sm', md: 'md' }}
+             fontSize={{ base: 'xs', md: 'lg' }}
           >
             Guidelines
           </MenuButton>

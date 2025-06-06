@@ -14,9 +14,9 @@ const AcademicData = ({ data }) => {
   } = data.academicData;
 
   return (
-    <Box my={6}>
-      <Box ml={{ base: 6, lg: '67px' }} mb={2}>
-        <Text fontSize={{ base: 'xs', lg: '20px' }}>
+    <Box my={{ base: 2, md: 6 }}>
+      <Box ml={{ base: 6,  md: '67px' }} >
+        <Text fontSize={{ base: 'xs', md: '20px' }}>
           Reference:{' '}
           <Link href={referenceLink} color="#0E5674" isExternal>
             {referenceText}
@@ -24,10 +24,10 @@ const AcademicData = ({ data }) => {
         </Text>
       </Box>
 
-      <Flex ml={{ base: 6, lg: '67px' }} mt="30px" gap="10px" align="center">
-        <Image src="/assets/hand.webp" alt="Support Icon" boxSize={{ base: '20px', lg: '30px' }} />
+      <Flex ml={{ base: 6, md: '67px' }} mt={{ base: 4,  md: '30px' }} gap="10px" align="center">
+        <Image src="/assets/hand.webp" alt="Support Icon" boxSize={{ base: '20px',  md: '30px' }} />
         <Text
-          fontSize={{ base: 'lg', lg: 'xl' }}
+          fontSize={{ base: 'lg', md: 'xl' }}
           fontWeight="bold"
           fontFamily="'Noto Sans', sans-serif"
           color="#0E5674"
@@ -37,19 +37,19 @@ const AcademicData = ({ data }) => {
       </Flex>
 
       <Flex
-        ml={{ base: 8, lg: '67px' }}
-        gap={{ base: '10px', lg: '50px' }}
+        ml={{ base: 8,  md: '67px' }}
+        gap={{ base: '10px',  md: '50px' }}
         align="center"
-        direction={{ base: 'row', lg: 'row' }}
+        direction={{ base: 'row',  md: 'row' }}
       >
-        <Image src={supportImage} alt="Sponsor" boxSize={{ base: '130px', lg: '200px' }} />
+        <Image src={supportImage} alt="Sponsor" boxSize={{ base: '130px',  md: '200px' }} />
         <Text
-          fontSize={{ base: 'md', lg: 'lg' }}
+          fontSize={{ base: 'md',  md: 'lg' }}
           fontFamily="'Noto Sans', sans-serif"
           color="#000000"
-          mt={{ base: '10px', lg: '30px' }}
-          p={{ base: 2, lg: 6 }}
-          maxW={{ base: '500px', lg: '800px' }}
+          mt={{ base: '10px',  md: '30px' }}
+          p={{ base: 2, md: 6 }}
+          maxW={{ base: '500px',  md: '800px' }}
           textAlign="left"
         >
           {description}

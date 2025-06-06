@@ -9,18 +9,13 @@ const KeyHighlights = ({ data }) => {
   const { keyHighlights } = data;
 
   return (
-    <Box
-      bg="#D7F3FF4D"
-      mx={{ base: 4, lg: 6 }}
-      my={{ base: 4, lg: 6 }}
-      px={{ base: 2, lg: 4 }}
-      py={{ base: 2, lg: 4 }}
-      borderRadius="md"
-    >
-      <Flex pl={{ base: 2, lg: 4 }} pt={{ base: 1, lg: 2 }} gap="10px" align="center">
-        <Image src="/assets/watch.webp" alt="Watch Icon" boxSize={{ base: "10px", lg: "20px" }} />
+    <Box bg="#D7F3FF4D" m={{ base: 4, md: 6 }} p={{ base: 2,md: 4 }} borderRadius="md">
+
+
+      <Flex pl={{ base: 2, md: 4 }} pt={{ base: 1, md: 2 }} gap="10px" align="center">
+        <Image src="/assets/watch.webp" alt="Watch Icon" boxSize={{ base: "16px", md: "20px" }} />
         <Text
-          fontSize={{ base: "sm", lg: "lg" }}
+          fontSize={{ base: "sm", md: "lg" }}
           fontWeight="bold"
           fontFamily="'Noto Sans', sans-serif"
           color="#0E5674"
@@ -29,7 +24,7 @@ const KeyHighlights = ({ data }) => {
         </Text>
       </Flex>
 
-      <Box mx={{ base: 4, lg: 6 }} my={{ base: 2, lg: 4 }} pl={{ base: 2, lg: 8 }} fontSize={{ base: "md", lg: "xl" }}>
+      <Box mx={{ base: 8, md: 6 }} my={{ base: 2, md: 4 }} pl={{ base: 2, md: 8 }} fontSize={{ base: "md",md: "xl" }}>
         <ReactMarkdown
           components={{
             li: ({ children }) => (

@@ -24,36 +24,36 @@ const SponsorBannerSlider = ({ data }) => {
         <SwiperSlide key={index}>
           <Box position="relative" my={6}>
             <Image
-              ml={{ base: '40px', lg: '50px' }}
+              ml={{ base: '20px', md: '30px' }}
               src={banner.image}
               alt="Sponsor Banner"
-              w={{ base: '380px', lg: '1600px' }}
-              h={{ base: '200px', lg: '300px' }}
+              w={{ base: '370px', md: '1640px' }}
+              h={{ base: '200px', md: '300px' }}
               objectFit="cover"
               borderRadius="md"
             />
             <Box
               position="absolute"
-              top="10%"
-              left={{ base: '10%', lg: '8%' }}
+              top={{ base: '12%', md: '10%' }}
+              left={{ base: '6%', md: '8%' }}
               bg="rgba(0, 0, 0, 0.7)"
               p={{ base: 2, lg: 6 }}
               ml={{ base: '15px'}}
               borderRadius="md"
-              w={{ base: '300px', lg: '500px' }}
-              h={{ base: '150px', lg: '240px' }}
+              w={{ base: '300px', md: '500px' }}
+              h={{ base: '150px', md: '240px' }}
               color="white"
             >
-              <Text fontWeight="bold" fontSize={{ base: 'xs', lg: 'xl' }}>
+              <Text fontWeight="bold" fontSize={{ base: 'xs', md: 'xl' }}>
                 {banner.title}
               </Text>
-              <Text mt={{ base: 1, lg: 2 }} fontSize={{ base: 'xs', lg: 'md' }}>
+              <Text mt={{ base: 1, md: 2 }} fontSize={{ base: 'xs', md: 'md' }}>
                 {banner.description}
               </Text>
               <Button
-                mt={{ base: 1, lg: 4 }}
-                mb={{ base: 1, lg: 4 }}
-                size={{ base: 'xs', lg: 'md' }}
+                mt={{ base: 1, md: 4 }}
+                mb={{ base: 1, md: 4 }}
+                size={{ base: 'xs',md: 'md' }}
                 bg="yellow.400"
                 color="black"
                 _hover={{ bg: 'yellow.300' }}
