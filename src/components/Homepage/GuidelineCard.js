@@ -36,6 +36,7 @@ const GuidelineCard = ({ id, title, authors, source, date, image }) => {
            mt={{ base: "2px", md: 4 }}
            fontSize={{ base: "8px",  md: 'md'}} 
            height={{ base: "14px",  md: "30px" }} 
+           w={{ base: "50px",  md: "100px" }} 
            bg="#0E5674"
            color="white"
           _hover={{ bg: "#0a3f59" }}
