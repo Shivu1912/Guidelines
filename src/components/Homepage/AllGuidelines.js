@@ -14,21 +14,24 @@ import {
   Menu,
   Button
 } from '@chakra-ui/react';
-import allGuidelinesData from '../../Helper/Data/allGuidelines.json';
+
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
-const AllGuidelines = () => {
+const AllGuidelines = ({ data }) => {
+  if (!data || data.length === 0) return null;
+
+
   const [guidelines, setGuidelines] = useState([]);
   const [filterType, setFilterType] = useState('All');
   const [filterValue, setFilterValue] = useState(null);
 
   useEffect(() => {
-    setGuidelines(allGuidelinesData);
-  }, []);
+    setGuidelines(data);
+  }, [data]);
 
   
-  const organisations = [...new Set(allGuidelinesData.map(item => item.organization))];
-  const specialities = [...new Set(allGuidelinesData.map(item => item.speciality))];
+  const organisations = [...new Set(data.map(item => item.organization))];
+  const specialities = [...new Set(data.map(item => item.speciality))];
 
   const filteredGuidelines = guidelines.filter(g => {
     if (filterType === 'All') return true;

@@ -68,6 +68,7 @@ export const Header = () => {
      
       <Box mt={{ base: 4, lg: 8 }}>
         <SearchBar />
+
       </Box>
     </Box>
   );

@@ -1,19 +1,14 @@
 import { useEffect, useState } from 'react';
 import { Box, Flex, Text,Image ,Divider} from '@chakra-ui/react';
 import GuidelineCard from '../Homepage/GuidelineCard';
-import mostlyViewedData from '../../Helper/Data/mostlyViewed.json';
+;
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 
-const MostlyViewed = () => {
-
-  const [mostlyViewed, setmostlyViewed] = useState([]);
-  
-     useEffect(() => {
-        setmostlyViewed( mostlyViewedData);
-      }, []);
+const MostlyViewed = ({ data }) => {
+  if (!data || data.length === 0) return null;
 
   return (
     <Box my={6}>
@@ -41,7 +36,7 @@ const MostlyViewed = () => {
         
          <Box mt={4} pl={{ base: 10, md: 16 }}>
            <Swiper spaceBetween={16} slidesPerView="auto" style={{ paddingBottom: '20px' }}>
-              {mostlyViewed.map((item, index) => (
+              {data.map((item, index) => (
                 <SwiperSlide key={item.id || index} style={{ width: 'auto' }}>
                   <GuidelineCard
                     id={item.id || index.toString()}
