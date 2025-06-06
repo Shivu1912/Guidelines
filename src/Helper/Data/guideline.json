@@ -139,7 +139,7 @@
       }
     ],
 
-    "watchSection": {
+  "watchSection": {
     "videoImage": "/assets/video.webp",
     "changeData": [
        "The guideline panel made 7 recommendations, including the use of fecal microbiota-based therapies in specific scenarios such as recurrent C difficile infection and severe or fulminant cases not responding to standard antibiotics.",
@@ -147,7 +147,6 @@
        "While fecal microbiota-based therapies are effective for preventing recurrent C difficile in select patients, they are not yet recommended for other gastrointestinal conditions except within the context of clinical trials."
     ]
 },
-
     "contemporaryData": {
       "rowLabels": ["Patients", "Clinicians", "Policy"],
       "strongRecommendation": [
