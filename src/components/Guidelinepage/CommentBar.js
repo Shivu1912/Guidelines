@@ -1,16 +1,14 @@
 import {
   Box,
-  Image,
   Text,
   Flex,
   Textarea,
   Avatar,
   Button,
   Stack,
-  Spinner,
   HStack,
 } from "@chakra-ui/react";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import Title from "../common/Title";
 
 
@@ -43,10 +41,6 @@ const CommentBar = ({ data }) => {
     setCurrentPage(1); 
   };
   
-
-
-
-
   return (
     <Box mb={6}>
       <Title src="/assets/msg.webp" title="Discussion" />
@@ -122,11 +116,11 @@ const CommentBar = ({ data }) => {
         </Stack>
 
          {totalPages > 1 && (
-          <HStack justify="center" mt={8}>
+          <HStack justify="left" mt={8} ml="60px">
             <Button
               onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
               isDisabled={currentPage === 1}
-              size="sm"
+              size="xs"
             >
               Previous
             </Button>
@@ -134,7 +128,7 @@ const CommentBar = ({ data }) => {
             <Button
               onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
               isDisabled={currentPage === totalPages}
-              size="sm"
+              size="xs"
             >
               Next
             </Button>

@@ -146,7 +146,7 @@ const AllGuidelines = ({ data }) => {
           </Box>
         ))}
 
-        <HStack justify="center" mt={6}>
+        <HStack justify="left" mt={6}>
           <Button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             isDisabled={currentPage === 1}

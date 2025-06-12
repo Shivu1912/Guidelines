@@ -12,7 +12,7 @@ const GuidelineCard = ({ id, title, authors, source, date, image }) => {
     <Box
       bg="#F2FAFD"
       w={{ base: '200px', md: '420px' }}
-      h={{ base: '130px', md: '230px' }}
+      h={{ base: '140px', md: '230px' }}
       borderRadius="md"
       boxShadow="sm"
       p={{ base: 2, md:5 }}
@@ -20,7 +20,7 @@ const GuidelineCard = ({ id, title, authors, source, date, image }) => {
       position="relative"
     >
       <Box>
-        <Text fontWeight="bold" fontSize={{ base: "10px", md: "lg" }} mb={{ base: "2px", md: 2 }} color="#000000">
+        <Text fontWeight="bold" fontSize={{ base: "xs", md: "xl" }} mb={{ base: "2px", md: 2 }} color="#000000">
           {title}
         </Text>
 
@@ -43,7 +43,7 @@ const GuidelineCard = ({ id, title, authors, source, date, image }) => {
           borderRadius="md"
           onClick={handleReadMore}
           >
-              Read More
+          Read More
           </Button>
       </Box>
 
