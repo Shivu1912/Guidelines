@@ -60,16 +60,14 @@ const CreateProfile = () => {
     <Flex justify="space-between" align="center" mb={4}>
       <Button
         variant="ghost"
-        leftIcon={<ChevronLeftIcon />}
+        leftIcon={<ChevronLeftIcon  boxSize={6} />}
         onClick={() => router.push('/')}
-        size="3xl"
       >
       </Button>
 
       <Button
         variant="ghost"
         onClick={() => router.push('/')}
-        size="sm"
       >
         <CloseIcon boxSize={3} />
       </Button>
