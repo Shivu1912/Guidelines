@@ -19,7 +19,7 @@ const GuidelineTitle = ({ data }) => {
   return (
     <Box mx={{ base: 4, md: 6 }} my={{ base: 4, md: 6 }}>
       <Stack spacing={2}>
-        <Heading size="lg" fontStyle="Inter">
+        <Heading size="lg">
           {title}
         </Heading>
 
@@ -32,7 +32,6 @@ const GuidelineTitle = ({ data }) => {
               color="#0E5674"
               size={{ base: "xs", md: "sm" }}
               _hover={{ bg: "gray.100" }}
-              fontFamily="Inter"
               fontSize={{ base: "xs", md: "sm" }}
               whiteSpace="normal"
               maxW={{ base: "45%", sm: "auto" }}
@@ -42,15 +41,15 @@ const GuidelineTitle = ({ data }) => {
           ))}
         </Stack>
 
-        <Text fontSize={{ base: "sm", md: "lg" }} fontStyle="Inter">
+        <Text fontSize={{ base: "sm", md: "lg" }} >
           Published by <b>{publishedBy}</b> on <b>{publishedDate}</b>
         </Text>
 
-        <Text fontSize={{ base: "sm", md: "lg" }} fontStyle="Inter">
+        <Text fontSize={{ base: "sm", md: "lg" }} >
           Authors: {authors.join(', ')}
         </Text>
 
-        <Text fontSize={{ base: "sm", md: "lg" }} fontStyle="Inter">
+        <Text fontSize={{ base: "sm", md: "lg" }} >
           Reviewed by {reviewedBy}
         </Text>
 

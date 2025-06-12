@@ -1,5 +1,6 @@
 import { Box, Heading, Text, Flex, Image } from '@chakra-ui/react';
 import ReactMarkdown from 'react-markdown';
+import Title from '../common/Title';
 
 const KeyHighlights = ({ data }) => {
   if (!data) {
@@ -11,13 +12,12 @@ const KeyHighlights = ({ data }) => {
   return (
     <Box bg="#D7F3FF4D" m={{ base: 4, md: 6 }} p={{ base: 2,md: 4 }} borderRadius="md">
 
-
+  
       <Flex pl={{ base: 2, md: 4 }} pt={{ base: 1, md: 2 }} gap="10px" align="center">
-        <Image src="/assets/watch.webp" alt="Watch Icon" boxSize={{ base: "16px", md: "20px" }} />
+        <Image src="/assets/watch.webp" alt="Watch Icon" boxSize={{ base: "25px", md: "35px" }} />
         <Text
-          fontSize={{ base: "sm", md: "lg" }}
+          fontSize={{ base: "lg", md: "xl" }}
           fontWeight="bold"
-          fontFamily="'Noto Sans', sans-serif"
           color="#0E5674"
         >
           Key Highlights
@@ -28,7 +28,7 @@ const KeyHighlights = ({ data }) => {
         <ReactMarkdown
           components={{
             li: ({ children }) => (
-              <li style={{ marginBottom: '4px', fontFamily: 'Inter' }}>{children}</li>
+              <li style={{ marginBottom: '4px'}}>{children}</li>
             ),
           }}
         >

@@ -46,22 +46,29 @@ const SearchBar= () =>  {
         <Divider orientation="vertical" height="30px"  mx={{ base: 0, md: 2 }}/>
 
         <Menu>
-          <MenuButton
-            as={Button}
-            variant="ghost"
-            fontWeight="bold"
-            rightIcon={<ChevronDownIcon />}
-            _hover={{ bg: "transparent" }}
-            fontFamily="Inter"
-             fontSize={{ base: 'xs', md: 'lg' }}
-          >
-            Guidelines
-          </MenuButton>
-          <MenuList>
-            <MenuItem>Guidelines</MenuItem>
-          
-          </MenuList>
-        </Menu>
+         <MenuButton
+        as={Button}
+    variant="ghost"
+    fontWeight="bold"
+    rightIcon={<ChevronDownIcon />}
+    _hover={{ bg: "transparent" }}
+    fontSize={{ base: '10px', md: 'lg' }}
+  >
+    Guidelines
+  </MenuButton>
+
+  <MenuList
+    zIndex="popover"
+    fontSize={{ base: '10px', md: 'md' }}
+    minW={{ base: '100px', md: '150px' }}
+    boxShadow="md"
+  >
+    <MenuItem >Guidelines</MenuItem>
+    <MenuItem>Organization</MenuItem>
+    <MenuItem>Speciality</MenuItem>
+  </MenuList>
+</Menu>
+
       </Flex>
     </Box>
   );

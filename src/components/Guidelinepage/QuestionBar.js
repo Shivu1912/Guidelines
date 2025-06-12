@@ -19,7 +19,6 @@ const QuestionBar = ({ data }) => {
             <Text
               fontSize={{ base: "md", md: "xl" }}
               fontWeight="bold"
-              fontFamily="'Noto Sans', sans-serif"
               color="#0E5674"
             >
              Ask GC
@@ -54,7 +53,6 @@ const QuestionBar = ({ data }) => {
              as={Button}
              fontWeight="bold"
              _hover={{ bg: "gray" }}
-             fontFamily="Inter"
              size={{ base: "xs",md: "md" }}
              mr={{ base: 2,md: 4 }}
              my={{ base: 4, md: 6 }}

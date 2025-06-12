@@ -9,7 +9,7 @@ export const SearchHeader = () => {
 
     <Box h= {{ base: "80px", lg: "100px" }} bg="#D7F3FF4D">
  
-    <Flex align="center" h= {{ base: "80px", lg: "100px" }} px={2} justifyContent="space-between">
+    <Flex align="center" h= {{ base: "80px", lg: "100px" }} justifyContent="space-between">
    
     <Image src="../assets/GC.webp" alt="GC Logo" width={{ base: "80px", lg: "150px" }} height={{ base: "50px", lg: "70px" }} />
 

@@ -1,5 +1,6 @@
 
 import { Box, Table, Thead, Tbody, Tr, Th, Td, Text,Flex,Image } from '@chakra-ui/react';
+import Title from '../common/Title';
 
 
 
@@ -17,17 +18,9 @@ const ContemporaryData = ({ data }) => {
 
   return (
     <Box  mt={6}>
-       <Flex ml={{ base: 6, md: "67px" }} mt={{ base: 4,  md: "40px" }}gap="10px" align="center">
-        <Image src="../assets/compare.webp" alt="New Logo" boxSize={{ base: "20px", md: "30px" }} />
-        <Text
-          fontSize={{ base: "lg",  md: "xl" }}
-          fontWeight="bold"
-          fontFamily="'Noto Sans', sans-serif"
-          color="#0E5674"
-        >
-          Contemporary Guidelines
-        </Text>
-      </Flex>
+
+      <Title src="../assets/compare.webp" title="Contemporary Guidelines" />
+   
 
       <Box h={{ base: "auto", md: "570px" }} w={{ base: "350px",  md: "800px" }} mx={{ base: 10,  md: "100px" }} my={{ base: 4,  md: 8 }}  border="4px solid #CDECF1">
 

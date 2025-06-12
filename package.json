@@ -13,6 +13,8 @@
     "@chakra-ui/react": "^2.2.4",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "dayjs": "^1.11.13",
+    "formik": "^2.4.6",
     "framer-motion": "^12.12.2",
     "next": "12.3.0",
     "react": "18.1.0",
@@ -21,10 +23,14 @@
     "react-markdown": "^10.1.0",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
-    "swiper": "^11.2.8"
+    "swiper": "^11.2.8",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
-    "eslint": "9.27.0",
-    "eslint-config-next": "15.1.8"
+    "@eslint/js": "^9.28.0",
+    "eslint": "^9.28.0",
+    "eslint-config-next": "15.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.2.0"
   }
 }

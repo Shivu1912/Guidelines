@@ -1,5 +1,6 @@
 
 import { Box, Image, Text, Flex, Link } from '@chakra-ui/react';
+import Title from '../common/Title';
 
 const AcademicData = ({ data }) => {
   if (!data || !data.academicData) {
@@ -23,19 +24,9 @@ const AcademicData = ({ data }) => {
           </Link>
         </Text>
       </Box>
-
-      <Flex ml={{ base: 6, md: '67px' }} mt={{ base: 4,  md: '30px' }} gap="10px" align="center">
-        <Image src="/assets/hand.webp" alt="Support Icon" boxSize={{ base: '20px',  md: '30px' }} />
-        <Text
-          fontSize={{ base: 'lg', md: 'xl' }}
-          fontWeight="bold"
-          fontFamily="'Noto Sans', sans-serif"
-          color="#0E5674"
-        >
-          Academic Supported By
-        </Text>
-      </Flex>
-
+      
+       <Title src="../assets/hand.webp" title="Academic Support By" />
+    
       <Flex
         ml={{ base: 8,  md: '67px' }}
         gap={{ base: '10px',  md: '50px' }}
@@ -45,7 +36,6 @@ const AcademicData = ({ data }) => {
         <Image src={supportImage} alt="Sponsor" boxSize={{ base: '130px',  md: '200px' }} />
         <Text
           fontSize={{ base: 'md',  md: 'lg' }}
-          fontFamily="'Noto Sans', sans-serif"
           color="#000000"
           mt={{ base: '10px',  md: '30px' }}
           p={{ base: 2, md: 6 }}

@@ -4,20 +4,21 @@ import {
   Box,
   Flex,
   Image,
-  Spacer,
   Button,
   Container,
   Heading,
-  Stack
 } from '@chakra-ui/react';
 import SearchBar from '../Homepage/SearchBar';
+import { useRouter } from 'next/router';
+
 
 export const Header = () => {
-  
+ const router = useRouter(); 
+ 
  
   return (
-    <Box bg="#D7F3FF4D" px={{ base: 2,  md: 6 }} py={{ base: 2,  md: 6 }}   height={{base: "190px", md: "385px"}} >
-      
+    <Box bg="#D7F3FF4D" px={{ base: 1,  md: 2 }} py={{ base: 1,  md: 1 }}  height={{base: "180px", md: "363px"}} >
+    
       <Flex
         align="center"
         justify="space-between"
@@ -35,6 +36,7 @@ export const Header = () => {
     color="white"
     _hover={{ bg: "#0a3f59" }}
     size={{ base: "xs",  md: "lg" }}
+    onClick={() => router.push('/signin')}
   >
     Sign In
   </Button>
@@ -54,7 +56,6 @@ export const Header = () => {
           as="h1"
           mt={4}
           textAlign="center"
-          fontFamily="'Noto Sans', sans-serif"
           fontWeight={600}
           fontSize={{ base: "md", md: "3xl" }}
           lineHeight="1.2"
@@ -65,7 +66,7 @@ export const Header = () => {
       </Container>
 
      
-      <Box mt={{ base: 2,  md: 8 }}>
+      <Box mt={{ base: 2,  md: 8 }} >
         <SearchBar />
 
       </Box>

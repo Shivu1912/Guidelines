@@ -15,7 +15,7 @@ const GuidelineCard = ({ id, title, authors, source, date, image }) => {
       h={{ base: '130px', md: '230px' }}
       borderRadius="md"
       boxShadow="sm"
-      p={{ base: 2, md: 5 }}
+      p={{ base: 2, md:5 }}
       mt={{ base: "2px", md: 2 }}
       position="relative"
     >

@@ -21,7 +21,7 @@ const Guideline = () => {
 
   useEffect(() => {
     if (id) {
-      fetch(`http://localhost:3000/api/guideline/${id}`)
+      fetch(`/api/guideline/${id}`)
         .then(res => res.json())
         .then(json => {
           if (json.success) {

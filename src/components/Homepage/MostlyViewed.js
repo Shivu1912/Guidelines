@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react';
-import { Box, Flex, Text,Image ,Divider} from '@chakra-ui/react';
+
+import { Box} from '@chakra-ui/react';
 import GuidelineCard from '../Homepage/GuidelineCard';
-;
+import Divider from '../common/Divider';
+import Title from '../common/Title';
+
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -13,25 +15,10 @@ const MostlyViewed = ({ data }) => {
   return (
     <Box my={{ base: 2, md: 6 }}>
          
-         <Flex  ml={{ base: 4, md: "67px" }} mt={{ base: 2, md: "30px" }} gap="10px" align="center">
-           <Image src="../assets/eye.webp" alt="New Logo" boxSize={{ base: "25px",  md: "50px" }} />
-           <Text
-            fontSize={{ base: "lg",  md: "2xl" }}
-             fontWeight="bold"
-             fontFamily="'Noto Sans', sans-serif"
-             color="#0E5674"
-           >
-           Mostly Viewed
-           </Text>
-         </Flex>
-   
-         <Divider
-           borderColor="#000000"
-           mt="10px"
-           ml={{ base: 4,  md: "67px" }}
-           height="1px"
-           width={{ base: "90%", md: "95%" }}
-         />
+    
+        <Title src="../assets/eye.webp" title="Mostly Viewed" />
+
+         <Divider/>
    
         
          <Box mt={4} pl={{ base: 4, md: 16 }}>

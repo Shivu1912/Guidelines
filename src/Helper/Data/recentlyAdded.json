@@ -23,21 +23,60 @@
     "date": "Feb 6, 2024",
     "image": "/assets/guideline2.webp"
   }, 
-   { 
+  {
     "id": "4",
-    "title": "2023 EULAR recommendations on imaging in diagnosis and management",
-    "authors": "Peter Mandl, Maria Antonietta DAgostino,amer Imdad, Osama Altayar",
+    "title": "2024 ADA Standards of Medical Care in Diabetes",
+    "authors": "Davida F. Kruger, Robert Gabbay, William T. Cefalu",
     "source": "Pubmed",
-    "date": "Feb 6, 2024",
+    "date": "Jan 15, 2024",
+    "image": "/assets/guideline1.webp"
+  },
+  {
+    "id": "5",
+    "title": "IDSA Guidelines on Community-Acquired Pneumonia in Adults",
+    "authors": "Thomas M. File Jr., Carlos del Rio, Laura Evans",
+    "source": "Pubmed",
+    "date": "Mar 1, 2024",
     "image": "/assets/guideline2.webp"
   },
-  
-  { 
-    "id": "5",
-    "title": "AGA Clinical Practice Guideline on Focal Microbiota–Based Therapies",
-    "authors": "Anne F. Peery, Colleen R. Kelly, Dina Kao, Aamer Imdad, Osama Altayar",
+  {
+    "id": "6",
+    "title": "AHA/ACC 2023 Guideline for the Management of Heart Failure",
+    "authors": "Biykem Bozkurt, Clyde W. Yancy, Mariell Jessup",
     "source": "Pubmed",
-    "date": "Mar 8, 2024",
+    "date": "Jan 28, 2024",
+    "image": "/assets/guideline2.webp"
+  },
+  {
+    "id": "7",
+    "title": "ACP Guidelines on the Treatment of Hypertension in Adults",
+    "authors": "Amir Qaseem, Linda L. Humphrey, Paul Shekelle",
+    "source": "Pubmed",
+    "date": "Apr 2, 2024",
     "image": "/assets/guideline1.webp"
+  },
+  {
+    "id": "8",
+    "title": "WHO 2023 Guidelines on Tuberculosis Prevention and Treatment",
+    "authors": "Soumya Swaminathan, Tereza Kasaeva, Mario Raviglione",
+    "source": "Pubmed",
+    "date": "Feb 20, 2024",
+    "image": "/assets/guideline1.webp"
+  },
+  {
+    "id": "9",
+    "title": "CDC Guidelines for the Use of Antiretroviral Agents",
+    "authors": "John T. Brooks, A. Rainwater-Lovett, Lisa M. Lee",
+    "source": "Pubmed",
+    "date": "Mar 18, 2024",
+    "image": "/assets/guideline2.webp"
+  },
+  {
+    "id": "10",
+    "title": "ACOG Recommendations on Prenatal Genetic Screening",
+    "authors": "Sarah J. Kilpatrick, Mary D’Alton, Laura E. Riley",
+    "source": "Pubmed",
+    "date": "Jan 9, 2024",
+    "image": "/assets/guideline2.webp"
   }
 ]

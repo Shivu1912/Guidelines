@@ -1,5 +1,5 @@
 [
-  {
+  { "id":"1",
     "source": "Medscape | Editorial",
     "date": "February 29, 2024",
     "title": "Type 2 Diabetes Mellitus Treatment & Management",
@@ -8,7 +8,8 @@
     "organization": "Medscape",
     "speciality": "Diabetes"
   },
-  {
+  { 
+    "id":"2",
     "source": "ACC | Opinion",
     "date": "February 8, 2024",
     "title": "Mitigating CVD Risk in the Postpartum Period",
@@ -18,6 +19,7 @@
     "speciality": "Cardiology"
   },
   {
+    "id":"3",
     "source": "AHA | Guidelines",
     "date": "March 15, 2024",
     "title": "Hypertension in Adults: Diagnosis and Management",
@@ -27,6 +29,7 @@
     "speciality": "Hypertension"
   },
   {
+    "id":"4",
     "source": "ADA | Recommendations",
     "date": "January 12, 2024",
     "title": "Standards of Medical Care in Diabetes",
@@ -36,6 +39,7 @@
     "speciality": "Diabetes"
   },
   {
+    "id":"5",
     "source": "ESC | Clinical Practice",
     "date": "February 1, 2024",
     "title": "Heart Failure Management Guidelines",
@@ -45,6 +49,7 @@
     "speciality": "Cardiology"
   },
   {
+    "id":"6",
     "source": "USPSTF | Review",
     "date": "March 5, 2024",
     "title": "Screening for Colorectal Cancer",
@@ -54,6 +59,7 @@
     "speciality": "Gastroenterology"
   },
   {
+    "id":"7",
     "source": "IDSA | Update",
     "date": "April 10, 2024",
     "title": "Antibiotic Stewardship in Hospitals",
@@ -63,6 +69,7 @@
     "speciality": "Infectious Diseases"
   },
   {
+    "id":"8",
     "source": "CDC | Guidance",
     "date": "February 20, 2024",
     "title": "COVID-19 Prevention and Control",
@@ -72,6 +79,7 @@
     "speciality": "Infectious Diseases"
   },
   {
+    "id":"9",
     "source": "WHO | Position Paper",
     "date": "January 18, 2024",
     "title": "Global Strategy on Cervical Cancer",
@@ -81,6 +89,7 @@
     "speciality": "Oncology"
   },
   {
+    "id":"10",
     "source": "ASCO | Clinical Guidelines",
     "date": "March 22, 2024",
     "title": "Breast Cancer Screening and Treatment",
@@ -90,6 +99,7 @@
     "speciality": "Oncology"
   },
   {
+    "id":"11",
     "source": "NICE | Guidance",
     "date": "April 2, 2024",
     "title": "Asthma Management in Adults and Children",
@@ -99,6 +109,7 @@
     "speciality": "Pulmonology"
   },
   {
+    "id":"12",
     "source": "ERS | Practice Guidelines",
     "date": "February 27, 2024",
     "title": "COPD Treatment Recommendations",
@@ -107,7 +118,8 @@
     "organization": "ERS",
     "speciality": "Pulmonology"
   },
-  {
+  { 
+    "id":"13",
     "source": "AGA | Clinical Update",
     "date": "March 14, 2024",
     "title": "Fecal Microbiota Transplantation for C. difficile",
@@ -133,5 +145,188 @@
     "url": "https://jnc8.org/bloodpressure",
     "organization": "JNC",
     "speciality": "Hypertension"
+  },
+
+  {
+    "source": "CDC | Advisory",
+    "date": "March 18, 2024",
+    "title": "Immunization Schedule for Adults",
+    "authors": "CDC Immunization Panel",
+    "url": "https://cdc.gov/immunization",
+    "organization": "CDC",
+    "speciality": "Preventive Medicine"
+  },
+  {
+    "source": "NICE | Clinical Pathways",
+    "date": "April 3, 2024",
+    "title": "Managing Chronic Kidney Disease",
+    "authors": "NICE CKD Working Group",
+    "url": "https://nice.org.uk/ckd",
+    "organization": "NICE",
+    "speciality": "Nephrology"
+  },
+  {
+    "source": "AHA | Update",
+    "date": "March 26, 2024",
+    "title": "Stroke Prevention Guidelines",
+    "authors": "Thomas A, Wells R",
+    "url": "https://aha.org/stroke-prevention",
+    "organization": "AHA",
+    "speciality": "Neurology"
+  },
+  {
+    "source": "ADA | Consensus Report",
+    "date": "April 8, 2024",
+    "title": "Diabetes Management During Pregnancy",
+    "authors": "ADA Obstetrics Task Force",
+    "url": "https://diabetes.org/pregnancy",
+    "organization": "ADA",
+    "speciality": "Endocrinology"
+  },
+  {
+    "source": "WHO | Best Practices",
+    "date": "March 12, 2024",
+    "title": "Mental Health Interventions in Crisis Settings",
+    "authors": "WHO Mental Health Group",
+    "url": "https://who.int/mental-health",
+    "organization": "WHO",
+    "speciality": "Psychiatry"
+  },
+  {
+    "source": "ASGE | Review",
+    "date": "April 6, 2024",
+    "title": "Colonoscopy Quality Indicators",
+    "authors": "ASGE Quality Taskforce",
+    "url": "https://asge.org/colonoscopy",
+    "organization": "ASGE",
+    "speciality": "Gastroenterology"
+  },
+  {
+    "source": "AAOS | Clinical Practice",
+    "date": "March 30, 2024",
+    "title": "ACL Injury Management",
+    "authors": "AAOS Sports Medicine Group",
+    "url": "https://aaos.org/acl",
+    "organization": "AAOS",
+    "speciality": "Orthopedics"
+  },
+  {
+    "source": "ACOG | Bulletin",
+    "date": "April 1, 2024",
+    "title": "Prenatal Care Guidelines",
+    "authors": "ACOG Committee",
+    "url": "https://acog.org/prenatal",
+    "organization": "ACOG",
+    "speciality": "Obstetrics"
+  },
+  {
+    "source": "ERS | Scientific Update",
+    "date": "March 19, 2024",
+    "title": "Pulmonary Rehabilitation Protocols",
+    "authors": "ERS Pulmonary Team",
+    "url": "https://ersjournals.com/rehab",
+    "organization": "ERS",
+    "speciality": "Pulmonology"
+  },
+  {
+    "source": "IDSA | Policy Update",
+    "date": "April 4, 2024",
+    "title": "Hospital Infection Control Standards",
+    "authors": "IDSA Infection Team",
+    "url": "https://idsociety.org/infection-control",
+    "organization": "IDSA",
+    "speciality": "Infectious Diseases"
+  },
+  {
+    "source": "ACC | Clinical Standards",
+    "date": "March 21, 2024",
+    "title": "Stable Angina Management",
+    "authors": "ACC Working Group",
+    "url": "https://acc.org/angina",
+    "organization": "ACC",
+    "speciality": "Cardiology"
+  },
+  {
+    "source": "USPSTF | Preventive Guide",
+    "date": "March 25, 2024",
+    "title": "Screening for Depression in Adults",
+    "authors": "USPSTF Advisory Group",
+    "url": "https://uspreventiveservicestaskforce.org/depression",
+    "organization": "USPSTF",
+    "speciality": "Psychiatry"
+  },
+  {
+    "source": "ASCO | Expert Consensus",
+    "date": "March 28, 2024",
+    "title": "Immunotherapy in Lung Cancer",
+    "authors": "ASCO Lung Cancer Panel",
+    "url": "https://asco.org/lung-cancer",
+    "organization": "ASCO",
+    "speciality": "Oncology"
+  },
+  {
+    "source": "NCCN | Guidelines",
+    "date": "April 7, 2024",
+    "title": "Colorectal Cancer Treatment Protocols",
+    "authors": "NCCN Expert Group",
+    "url": "https://nccn.org/colorectal",
+    "organization": "NCCN",
+    "speciality": "Oncology"
+  },
+  {
+    "source": "AAFP | Toolkit",
+    "date": "March 31, 2024",
+    "title": "Smoking Cessation in Primary Care",
+    "authors": "AAFP Practice Committee",
+    "url": "https://aafp.org/smoking",
+    "organization": "AAFP",
+    "speciality": "Family Medicine"
+  },
+  {
+    "source": "AAN | Evidence-Based Update",
+    "date": "March 17, 2024",
+    "title": "Migraine Prevention and Management",
+    "authors": "AAN Headache Panel",
+    "url": "https://aan.com/migraine",
+    "organization": "AAN",
+    "speciality": "Neurology"
+  },
+  {
+    "source": "WHO | Framework",
+    "date": "April 9, 2024",
+    "title": "Nutrition in Adolescent Health",
+    "authors": "WHO Adolescent Health Team",
+    "url": "https://who.int/nutrition-adolescents",
+    "organization": "WHO",
+    "speciality": "Nutrition"
+  },
+  {
+    "source": "ESC | Clinical Algorithm",
+    "date": "April 10, 2024",
+    "title": "Management of Atrial Fibrillation",
+    "authors": "ESC Arrhythmia Panel",
+    "url": "https://escardio.org/afib",
+    "organization": "ESC",
+    "speciality": "Cardiology"
+  },
+  {
+    "source": "ADA | Practice Points",
+    "date": "April 12, 2024",
+    "title": "Insulin Dosing in Type 1 Diabetes",
+    "authors": "ADA Type 1 Diabetes Committee",
+    "url": "https://diabetes.org/insulin",
+    "organization": "ADA",
+    "speciality": "Endocrinology"
+  },
+  {
+    "source": "CDC | Interim Guidelines",
+    "date": "April 14, 2024",
+    "title": "Mpox Virus Exposure Management",
+    "authors": "CDC Emergency Response Team",
+    "url": "https://cdc.gov/mpox",
+    "organization": "CDC",
+    "speciality": "Infectious Diseases"
   }
 ]
+
+
