@@ -12,8 +12,9 @@ const RecentlyAdded = ({ data }) => {
 
   return (
     <Box my={{ base: 2, md: 6 }}>
-     
+     <Box pt={{ base: 6, md: 2}}>
      <Title src="../assets/new.webp" title=" Recently Added" />
+     </Box>
 
       <Divider/>
 
