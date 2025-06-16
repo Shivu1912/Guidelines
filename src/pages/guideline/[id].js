@@ -1,3 +1,4 @@
+import { Box} from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import SearchHeader from '../../components/Guidelinepage/SearchHeader';
@@ -44,6 +45,7 @@ const Guideline = () => {
 
   return (
     <>
+      <Box>
       <SearchHeader />
       <GuidelineTitle data={data} />
       <KeyHighlights data={data} />
@@ -55,6 +57,7 @@ const Guideline = () => {
       <AcademicData data={data} />
       <CommentBar data={data} />
       <Footer id={id} />
+      </Box>
     </>
   );
 };

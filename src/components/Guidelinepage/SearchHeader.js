@@ -7,7 +7,7 @@ export const SearchHeader = () => {
 
   return (
 
-    <Box h= {{ base: "80px", lg: "100px" }} bg="#D7F3FF4D">
+    <Box h= {{ base: "80px", lg: "100px" }} bg="#D7F3FF4D" px={{ base: 4, md: 8 }} >
  
     <Flex align="center" h= {{ base: "80px", lg: "100px" }} justifyContent="space-between">
    
@@ -21,10 +21,11 @@ export const SearchHeader = () => {
         borderColor="gray.200"
         borderRadius="md"
         bg="white"
-        height={{ base: "30px", lg: "40px" }}
+        height={{ base: "30px", lg: "50px" }}
         boxShadow="md"
+        
       >
-        <InputGroup flex="1">
+        <InputGroup flex="1" >
           <InputLeftElement>
             <Icon as={SearchIcon} color="gray.400" />
           </InputLeftElement>

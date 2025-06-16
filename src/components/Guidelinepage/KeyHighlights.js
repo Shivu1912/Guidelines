@@ -10,7 +10,7 @@ const KeyHighlights = ({ data }) => {
   const { keyHighlights } = data;
 
   return (
-    <Box bg="#D7F3FF4D" m={{ base: 4, md: 6 }} p={{ base: 2,md: 4 }} borderRadius="md">
+    <Box bg="#D7F3FF4D"  borderRadius="md" py={{ base: 1, md: 2 }} mx={{ base: 6, md: "60px" }}>
 
   
       <Flex pl={{ base: 2, md: 4 }} pt={{ base: 1, md: 2 }} gap="10px" align="center">

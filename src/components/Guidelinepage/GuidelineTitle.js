@@ -17,9 +17,9 @@ const GuidelineTitle = ({ data }) => {
   } = data;
 
   return (
-    <Box mx={{ base: 4, md: 6 }} my={{ base: 4, md: 6 }}>
+    <Box my={{ base: 4, md: 6 }} px={{ base: 6, md: "60px"}}>
       <Stack spacing={2}>
-        <Heading size="lg">
+        <Heading size={{ base: "md", md: "lg" }}>
           {title}
         </Heading>
 
@@ -41,15 +41,15 @@ const GuidelineTitle = ({ data }) => {
           ))}
         </Stack>
 
-        <Text fontSize={{ base: "sm", md: "lg" }} >
+        <Text fontSize={{ base: "sm", md: "xl" }} >
           Published by <b>{publishedBy}</b> on <b>{publishedDate}</b>
         </Text>
 
-        <Text fontSize={{ base: "sm", md: "lg" }} >
+        <Text fontSize={{ base: "sm", md: "xl" }} >
           Authors: {authors.join(', ')}
         </Text>
 
-        <Text fontSize={{ base: "sm", md: "lg" }} >
+        <Text fontSize={{ base: "sm", md: "xl" }} >
           Reviewed by {reviewedBy}
         </Text>
 

@@ -1,4 +1,4 @@
-
+import { Box} from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import Header from '../components/Layout/Header';
 import RecentlyAdded from '../components/Homepage/RecentlyAdded';
@@ -21,10 +21,13 @@ const HomePage = () => {
 
   return (
     <>
+      <Box>
       <Header />
       <RecentlyAdded data={data.recentlyAdded} />
       <MostlyViewed data={data.mostlyViewed} />
       <AllGuidelines data={data.allGuidelines} />
+      </Box>
+    
     </>
   );
 };

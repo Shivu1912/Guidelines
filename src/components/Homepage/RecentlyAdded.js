@@ -12,14 +12,14 @@ const RecentlyAdded = ({ data }) => {
 
   return (
     <Box my={{ base: 2, md: 6 }}>
-     <Box pt={{ base: 6, md: 2}}>
+     <Box pt={{ base: 4, md: 2}}>
      <Title src="../assets/new.webp" title=" Recently Added" />
      </Box>
 
       <Divider/>
 
     
-      <Box mt={4} pl={{ base: 4, md: 16 }}>
+      <Box mt={4} pl={{ base: 8, md: 16 }}>
         <Swiper spaceBetween={16} slidesPerView="auto" style={{ paddingBottom: '20px' }}>
     {data.map((item, index) => (
       <SwiperSlide key={item.id || index} style={{ width: 'auto' }}>

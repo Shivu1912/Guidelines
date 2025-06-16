@@ -59,7 +59,7 @@ const AllGuidelines = ({ data }) => {
       <Title src="../assets/book.webp" title="All Guidelines" />
       <Divider />
 
-      <Box mt={{ base: 2, md: 6 }} pl={{ base: 4, md: 16 }}>
+      <Box mt={{ base: 2, md: 6 }} pl={{ base: 8, md: "67px" }}>
         <HStack spacing={4}>
           <Button
             bg={filterType === 'All' ? "#0E5674" : "white"}
@@ -134,7 +134,7 @@ const AllGuidelines = ({ data }) => {
 
         {allguidelines.map((g, idx) => (
           <Box key={idx} mb={{ base: 4, md: 6 }} mt={{ base: 2, md: 6 }}>
-            <Heading fontWeight="bold" size={{ base: "sm", md: "md" }} color="#0E5674" mb={1}  onClick={() => handleReadMore(g.id)}>
+            <Heading fontWeight="bold" size={{ base: "sm", md: "md" }} color="#0E5674" mb={1}  cursor="pointer"  _hover={{ color:"gray", textDecoration: "underline" }}  onClick={() => handleReadMore(g.id)}>
               {g.source}
             </Heading>
             <Text fontSize={{ base: "xs", md: "md" }} color="#303030">{g.date}</Text>
@@ -146,16 +146,21 @@ const AllGuidelines = ({ data }) => {
           </Box>
         ))}
 
-        <HStack justify="left" mt={6}>
+        <HStack justify="left" mt={{ base: 0, md: 4 }}>
           <Button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             isDisabled={currentPage === 1}
+            size={{ base: "xs", md: "md" }}
           >
             Previous
           </Button>
+
+          <Text fontSize={{ base: "xs", md: "md" }}>Page {currentPage} of {totalPages}</Text>
+          
           <Button
             onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
             isDisabled={currentPage === totalPages}
+            size={{ base: "xs", md: "md" }}
           >
             Next
           </Button>

@@ -16,7 +16,8 @@ import { SearchIcon, ChevronDownIcon } from "@chakra-ui/icons";
 
 const SearchBar= () =>  {
   return (
-    <Box borderRadius="md" p={{ base: 4,  md: 4 }} maxW="900px" mx={{ base: "30px", lg: "280px" }} height={{ base: "50px", md: "100px" }}>
+    <Flex justifyContent="center" alignItems="center">
+    <Box  borderRadius="md" p={{ base: 4,  md: 4 }} maxW="900px"   w="100%"  height={{ base: "50px", md: "100px" }}>
       <Flex
         align="center"
         border="1px solid"
@@ -71,6 +72,7 @@ const SearchBar= () =>  {
 
       </Flex>
     </Box>
+    </Flex>
   );
 }
 

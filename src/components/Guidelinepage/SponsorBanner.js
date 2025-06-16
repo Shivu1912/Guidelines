@@ -22,12 +22,14 @@ const SponsorBannerSlider = ({ data }) => {
     >
       {sponsorBanners.map((banner, index) => (
         <SwiperSlide key={index}>
-          <Box position="relative" my={6}>
+          <Box position="relative" my={6} px={{ base: 6, md: "60px" }} >
+
+            
             <Image
-              ml={{ base: '20px', md: '30px' }}
+             
               src={banner.image}
               alt="Sponsor Banner"
-              w={{ base: '370px', md: '1640px' }}
+              w={{ base: '350px', md: '1640px' }}
               h={{ base: '200px', md: '300px' }}
               objectFit="cover"
               borderRadius="md"

@@ -17,7 +17,7 @@ const AcademicData = ({ data }) => {
   return (
     <Box my={{ base: 2, md: 6 }}>
       <Box ml={{ base: 6,  md: '67px' }} >
-        <Text fontSize={{ base: 'xs', md: '20px' }}>
+        <Text fontSize={{ base: 'sm', md: '2xl' }}>
           Reference:{' '}
           <Link href={referenceLink} color="#0E5674" isExternal>
             {referenceText}
@@ -35,12 +35,13 @@ const AcademicData = ({ data }) => {
       >
         <Image src={supportImage} alt="Sponsor" boxSize={{ base: '130px',  md: '200px' }} />
         <Text
-          fontSize={{ base: 'md',  md: 'lg' }}
+          fontSize={{ base: 'md',  md: 'xl' }}
           color="#000000"
           mt={{ base: '10px',  md: '30px' }}
           p={{ base: 2, md: 6 }}
           maxW={{ base: '500px',  md: '800px' }}
           textAlign="left"
+          
         >
           {description}
         </Text>

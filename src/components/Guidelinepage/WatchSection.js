@@ -15,34 +15,14 @@ const WatchSection = ({ data }) => {
 return (
 <Box my={6}>
       
-
       <Title src="../assets/watch.webp" title="Watch Now" />
-      {/* <Flex ml={{ base: 6, md: "67px" }} mt={{ base: "30px", md: "60px" }}gap="10px" align="center">
-        <Image src="../assets/watch.webp" alt="New Logo" boxSize={{ base: "20px", md: "40px" }} />
-        <Text
-          fontSize={{ base: "xl", md: "2xl" }}
-          fontWeight="bold"
-          color="#0E5674"
-        >
-          Watch Now
-        </Text>
-      </Flex> */}
-
+   
       <Box mt={{ base: 4, md: 6 }}> <Image src={videoImage}  alt="Video" pl={{ base: "50px", md: "100px" }} w={{ base: "300px", md: "800px" }} h={{ base: "150px", lg: "400px" }}/></Box>
-
+       
+        <Box pt={{ base: 4, md: 2}}>
         <Title src="../assets/que.webp" title="What Changed?" />
+        </Box>
 
-{/* 
-       <Flex ml={{ base: 6, md: "67px" }} mt="30px"gap="10px" align="center">
-        <Image src="../assets/que.webp" alt="New Logo" boxSize={{ base: "20px", md: "30px" }} />
-        <Text
-          fontSize={{ base: "lg", md: "xl" }}
-          fontWeight="bold"
-          color="#0E5674"
-        >
-          What Changed?
-        </Text>
-      </Flex> */}
        <Box  mx={{ base: "50px",md: "120px" }} my={{ base: 2,md: 4 }} fontSize={{base: "md", md: "xl"}}> 
           <ReactMarkdown  components={{
             li: ({ children }) => <li style={{ marginBottom: '4px'}}>{children}</li>

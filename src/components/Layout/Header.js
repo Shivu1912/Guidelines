@@ -17,7 +17,7 @@ export const Header = () => {
  
  
   return (
-    <Box bg="#D7F3FF4D" px={{ base: 1,  md: 2 }} py={{ base: 1,  md: 1 }}  height={{base: "186px", md: "363px"}} >
+    <Box bg="#D7F3FF4D" px={{ base: 8,  md: "67px" }} py={{ base: 2,  md: 3 }}  height={{base: "190px", md: "370px"}} >
     
       <Flex
         align="center"

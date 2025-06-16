@@ -21,8 +21,7 @@ const ContemporaryData = ({ data }) => {
 
       <Title src="../assets/compare.webp" title="Contemporary Guidelines" />
    
-
-      <Box h={{ base: "auto", md: "570px" }} w={{ base: "350px",  md: "800px" }} mx={{ base: 10,  md: "100px" }} my={{ base: 4,  md: 8 }}  border="4px solid #CDECF1">
+      <Box h={{ base: "auto", md: "570px" }} w={{ base: "320px",  md: "800px" }} ml={{ base: 9,  md: "100px" }} my={{ base: 4,  md: 8 }}  border="4px solid #CDECF1">
 
     <Box overflowX="auto">
   <Table variant="simple" minW="600px">
@@ -59,11 +58,11 @@ const ContemporaryData = ({ data }) => {
     </Thead>
     <Tbody>
       {rowLabels.map((label, idx) => (
-             <Tr key={label}>
+      <Tr key={label}>
         <Td
           fontWeight="bold"
           fontSize={{ base: "xs", md: "sm", lg: "md" }}
-          px={{ base: 2, md: 4 }}
+          px={{ base: 0, md: 4 }}
           py={{ base: 1, md: 2 }}
         >
           {label}

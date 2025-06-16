@@ -4,7 +4,7 @@ const QuestionBar = ({ data }) => {
   const guidelineTitle = data?.title || "this guideline";
  
   return (
-  <Box bg="#D7F3FF4D" ml={{ base: 6,md: "30px" }} mr={{ base: 2,md: "20px" }}  my={{ base: 4,md: 8}}  p={{ base: 2,md: 4 }}  position="relative"
+  <Box bg="#D7F3FF4D" mx={{ base: 6, md: "60px" }}   my={{ base: 4,md: 8}}  p={{ base: 2,md: 4 }}  position="relative"
     borderRadius="md">
         
    <Flex
@@ -27,7 +27,6 @@ const QuestionBar = ({ data }) => {
     <Text  mt={{ base: 6, md: 10 }} mb={2} fontSize={{ base: "sm", md: "xl" }} align="center">Ask any question relating to the <b>““{guidelineTitle}””</b> guidelines</Text>
   <Box borderRadius="md" p={{ base: 2,md: 4 }} maxW="900px" mx={{ base: "50px", md: "280px" }} height={{ base: "50px",md: "100px" }}>
        <Flex
-       
          align="center"
          border="1px solid"
          borderColor="gray.200"
@@ -43,8 +42,7 @@ const QuestionBar = ({ data }) => {
              type="text"
              placeholder="Type your question..."
              border="none"
-             _focus={{ outline: "none", boxShadow: "none" }}
-            
+             _focus={{ outline: "none", boxShadow: "none" }}  
            />
          </InputGroup>
           <Button

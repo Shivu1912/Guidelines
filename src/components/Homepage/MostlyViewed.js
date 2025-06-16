@@ -21,7 +21,7 @@ const MostlyViewed = ({ data }) => {
          <Divider/>
    
         
-         <Box mt={4} pl={{ base: 4, md: 16 }}>
+         <Box mt={4} pl={{ base: 8, md: "67px" }}>
            <Swiper spaceBetween={16} slidesPerView="auto" style={{ paddingBottom: '20px' }}>
               {data.map((item, index) => (
                 <SwiperSlide key={item.id || index} style={{ width: 'auto' }}>

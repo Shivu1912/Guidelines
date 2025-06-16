@@ -34,9 +34,9 @@ const GuidelineCard = ({ id, title, authors, source, date, image }) => {
 
         <Button
            mt={{ base: "2px", md: 4 }}
-           fontSize={{ base: "8px",  md: 'md'}} 
-           height={{ base: "14px",  md: "30px" }} 
-           w={{ base: "50px",  md: "100px" }} 
+           fontSize={{ base: "10px",  md: 'md'}} 
+           height={{ base: "18px",  md: "30px" }} 
+           w={{ base: "60px",  md: "100px" }} 
            bg="#0E5674"
            color="white"
           _hover={{ bg: "#0a3f59" }}
