@@ -95,7 +95,7 @@ const CommentBar = ({ data }) => {
         gap={{ base: 4, lg: 6 }}
         my={{ base: 4, lg: 6 }}
         ml={{ base: 10, lg: "75px" }}
-        w={{ base: "350px", lg: "1000px" }}
+        w={{ base: "330px", lg: "1000px" }}
         wrap="wrap"
       >
         <Avatar
@@ -116,7 +116,7 @@ const CommentBar = ({ data }) => {
           <Button
             position="absolute"
             bottom="12px"
-            right={{ base: "30px", lg: "12px" }}
+            right={{ base: "20px", lg: "12px" }}
             size={{ base: "xs", lg: "sm" }}
             bg="#0E5674"
             color="white"
