@@ -78,6 +78,7 @@ const CommentBar = ({ data }) => {
       text: newComment,
       time: new Date().toISOString(),
       avatar: "/assets/user1.webp",
+
     };
 
     setComments([newCommentObj, ...comments]);

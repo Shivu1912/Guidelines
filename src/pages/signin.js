@@ -13,6 +13,8 @@ import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { useRouter } from 'next/router';
 import { ChevronLeftIcon, CloseIcon } from '@chakra-ui/icons';
+import { FormErrorMessage } from '@chakra-ui/react';
+
 
 
 const CreateProfile = () => {
@@ -25,18 +27,25 @@ const CreateProfile = () => {
     speciality: '',
     year: '',
   };
+  
+const currentYear = new Date().getFullYear();
+const minYear = currentYear - 100;
 
-  const validationSchema = Yup.object({
-    name: Yup.string().required('Name is required'),
-    city: Yup.string().required('City is required'),
-    degree: Yup.string().required('Degree is required'),
-    speciality: Yup.string().required('Speciality is required'),
-    year: Yup.string()
-      .matches(/^\d{4}$/, 'Enter a valid year')
-      .required('Year of completion is required'),
+const validationSchema = Yup.object({
+  name: Yup.string().required('Name is required'),
+  city: Yup.string().required('City is required'),
+  degree: Yup.string().required('Degree is required'),
+  speciality: Yup.string().required('Speciality is required'),
+  year: Yup.number()
+    .typeError('Enter a valid year')
+    .integer('Year must be a whole number')
+    .min(minYear, `Enter a valid year between ${minYear} and ${currentYear}`)
+    .max(currentYear, `Enter a valid year between ${minYear} and ${currentYear}`)
+    .required('Year of completion is required'),
   });
 
   const handleSubmit = (values, actions) => {
+    console.log('values:',initialValues);
     setTimeout(() => {
       console.log('Form submitted:', values);
       localStorage.setItem('profile', JSON.stringify(values));
@@ -109,8 +118,9 @@ const CreateProfile = () => {
     
             <Field name="name">
               {({ field }) => (
-                <FormControl isRequired>
+                <FormControl isRequired isInvalid={formik.touched.name && !!formik.errors.name}>
                   <Input {...field} placeholder="Name" />
+                  <FormErrorMessage>{formik.errors.name}</FormErrorMessage>
                 </FormControl>
               )}
             </Field>
@@ -118,13 +128,14 @@ const CreateProfile = () => {
      
             <Field name="city">
               {({ field }) => (
-                <FormControl isRequired>
+                <FormControl isRequired isInvalid={formik.touched.city && !!formik.errors.city}>
                   <Select {...field} placeholder="Current City">
                     <option value="Delhi">Delhi</option>
                     <option value="Mumbai">Mumbai</option>
                     <option value="Bangalore">Bangalore</option>
                     <option value="Other">Other</option>
                   </Select>
+                  <FormErrorMessage>{formik.errors.city}</FormErrorMessage>
                 </FormControl>
               )}
             </Field>
@@ -142,7 +153,7 @@ const CreateProfile = () => {
                 >
                   <Field name="degree">
                     {({ field }) => (
-                      <FormControl isRequired flex="1">
+                      <FormControl isRequired flex="1" isInvalid={formik.touched.degree && !!formik.errors.degree}>
                         <Select {...field} placeholder="Degree">
                           <option value="BAMS">BAMS</option>
                           <option value="BDS">BDS</option>
@@ -159,31 +170,35 @@ const CreateProfile = () => {
                           <option value="MDS">MDS</option>
                           <option value="MS">MS</option>
                         </Select>
+                        <FormErrorMessage>{formik.errors.degree}</FormErrorMessage>
                       </FormControl>
                     )}
                   </Field>
 
                   <Field name="speciality">
                     {({ field }) => (
-                      <FormControl isRequired flex="1">
+                      <FormControl isRequired flex="1" isInvalid={formik.touched.speciality && !!formik.errors.speciality}>
                         <Select {...field} placeholder="Speciality" >
                           <option value="Cardiology">Cardiology</option>
                           <option value="Neurology">Neurology</option>
                           <option value="Orthopaedics">Orthopaedics</option>
                           <option value="General Medicine">General Medicine</option>
                         </Select>
+                        <FormErrorMessage>{formik.errors.speciality}</FormErrorMessage>
                       </FormControl>
                     )}
                   </Field>
                 </Flex>
 
-                <Field name="year">
-                  {({ field }) => (
-                    <FormControl isRequired>
-                      <Input {...field} placeholder="Year of Completion" />
-                    </FormControl>
-                  )}
-                </Field>
+                  <Field name="year">
+                    {({ field }) => (
+                      <FormControl isRequired isInvalid={formik.touched.year && !!formik.errors.year}>
+                        <Input {...field} placeholder="Year of Completion" />
+                        <FormErrorMessage>{formik.errors.year}</FormErrorMessage>
+                        </FormControl>
+                    )}
+                  </Field>
+
               </VStack>
             </Box>
 

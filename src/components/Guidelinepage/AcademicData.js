@@ -17,7 +17,7 @@ const AcademicData = ({ data }) => {
   return (
     <Box my={{ base: 2, md: 6 }}>
       <Box ml={{ base: 6,  md: '67px' }} >
-        <Text fontSize={{ base: 'sm', md: '2xl' }}>
+        <Text fontSize={{ base: 'xs', md: '2xl' }}>
           Reference:{' '}
           <Link href={referenceLink} color="#0E5674" isExternal>
             {referenceText}

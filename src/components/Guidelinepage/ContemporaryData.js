@@ -13,6 +13,8 @@ const ContemporaryData = ({ data }) => {
     rowLabels,
     strongRecommendation,
     conditionalRecommendation,
+    source,
+    reference,
   } = data.contemporaryData;
 
 
@@ -93,13 +95,14 @@ const ContemporaryData = ({ data }) => {
         <Text fontWeight="bold"  bg="#CDECF1" p={1} mb={2}>Certainty in the Evidence</Text>
         <Text><b>High: H </b>&nbsp;&nbsp; <b>Moderate: M </b>&nbsp;&nbsp; <b>Low: L</b> &nbsp;&nbsp; <b>Very Low: VL</b></Text>
         <Text fontSize="sm" color="gray.600" mt={2}>
-          Source: Grading of Recommendations Assessment, Development and Evaluation Working Group
+          Source:{source}
           <br />
-          (Schunemann HJ et al. <i>Am J Respir Crit Care Med.</i> 2006;174:605-14. Guyatt GH et al. <i>BMJ</i> 2008;336:924–6)
+          ({reference})
         </Text>
       </Box>
       </Box>
     </Box>
+ 
   );
 };
 
