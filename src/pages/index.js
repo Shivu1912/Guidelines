@@ -1,11 +1,15 @@
 import { Box } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import dynamic from 'next/dynamic';
 import Header from '../components/Layout/Header';
 import RecentlyAdded from '../components/Homepage/RecentlyAdded';
 import MostlyViewed from '../components/Homepage/MostlyViewed';
-import AllGuidelines from '../components/Homepage/AllGuidelines';
+
+
+const AllGuidelines = dynamic(() => import('../components/Homepage/AllGuidelines'), {
+  ssr: false,
+});
 
 const HomePage = () => {
   const [data, setData] = useState({
