@@ -5,7 +5,7 @@ const Title = ({ src, title }) => {
     <Flex ml={{ base: 8, md: "67px" }} mt={{ base: 2, md: "30px" }} gap="10px" align="center">
       <Image src={src} alt="Section Icon" boxSize={{ base: "30px", md: "50px" }} />
       <Text
-        fontSize={{ base: "xl", md: "3xl" }}
+        fontSize={{ base: "2xl", md: "3xl" }}
         fontWeight="bold"
         color="#0E5674"
       >

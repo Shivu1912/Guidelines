@@ -17,7 +17,7 @@ export const Header = () => {
  
  
   return (
-    <Box bg="#D7F3FF4D" px={{ base: 8,  md: "67px" }} py={{ base: 2,  md: 3 }}  height={{base: "190px", md: "370px"}} >
+    <Box bg="#D7F3FF4D" px={{ base: 8,  md: "67px" }} py={{ base: 2,  md: 3 }}  height={{base: "195px", md: "370px"}} >
     
       <Flex
         align="center"
@@ -28,7 +28,7 @@ export const Header = () => {
   <Image
     src="../assets/medflix_logo.webp"
     alt="medflix Logo"
-    width={{ base: "80px",  md: "180px" }}
+    width={{ base: "90px",  md: "180px" }}
   />
 
   <Button
@@ -56,8 +56,8 @@ export const Header = () => {
           as="h1"
           mt={4}
           textAlign="center"
-          fontWeight={600}
-          fontSize={{ base: "md", md: "3xl" }}
+          fontWeight="bold"
+          fontSize={{ base: "lg", md: "3xl" }}
           lineHeight="1.2"
         >
           World’s Top Clinical Guidelines<br />

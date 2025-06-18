@@ -39,7 +39,7 @@ const SearchBar= () =>  {
             pl={{ base: '30px', md: "40px" }}
             border="none"
             _focus={{ outline: "none", boxShadow: "none" }}
-             fontSize={{ base: '10px', md: 'lg' }}
+             fontSize={{ base: 'xs', md: 'lg' }}
             
           />
         </InputGroup>
@@ -48,27 +48,27 @@ const SearchBar= () =>  {
 
         <Menu>
          <MenuButton
-        as={Button}
-    variant="ghost"
-    fontWeight="bold"
-    rightIcon={<ChevronDownIcon />}
-    _hover={{ bg: "transparent" }}
-    fontSize={{ base: '10px', md: 'lg' }}
-  >
-    Guidelines
-  </MenuButton>
+            as={Button}
+            variant="ghost"
+            fontWeight="bold"
+            rightIcon={<ChevronDownIcon />}
+            _hover={{ bg: "transparent" }}
+            fontSize={{ base: 'sm', md: 'lg' }}
+        >
+         Guidelines
+        </MenuButton>
 
-  <MenuList
-    zIndex="popover"
-    fontSize={{ base: '10px', md: 'md' }}
-    minW={{ base: '100px', md: '150px' }}
-    boxShadow="md"
-  >
-    <MenuItem >Guidelines</MenuItem>
-    <MenuItem>Organization</MenuItem>
-    <MenuItem>Speciality</MenuItem>
-  </MenuList>
-</Menu>
+            <MenuList
+              zIndex="popover"
+              fontSize={{ base: 'sm', md: 'md' }}
+              minW={{ base: '100px', md: '150px' }}
+              boxShadow="md"
+            >
+              <MenuItem >Guidelines</MenuItem>
+              <MenuItem>Organization</MenuItem>
+              <MenuItem>Speciality</MenuItem>
+           </MenuList>
+        </Menu>
 
       </Flex>
     </Box>
