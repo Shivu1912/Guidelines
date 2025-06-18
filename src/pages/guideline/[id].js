@@ -1,6 +1,8 @@
-import { Box} from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import axios from 'axios';
+
 import SearchHeader from '../../components/Guidelinepage/SearchHeader';
 import GuidelineTitle from '../../components/Guidelinepage/GuidelineTitle';
 import KeyHighlights from '../../components/Guidelinepage/KeyHighlights';
@@ -22,9 +24,9 @@ const Guideline = () => {
 
   useEffect(() => {
     if (id) {
-      fetch(`/api/guideline/${id}`)
-        .then(res => res.json())
-        .then(json => {
+      axios.get(`/api/guideline/${id}`)
+        .then(response => {
+          const json = response.data;
           if (json.success) {
             setData(json.result);
           } else {
@@ -39,13 +41,11 @@ const Guideline = () => {
     }
   }, [id]);
 
-   if (loading) return <Loader />;
+  if (loading) return <Loader />;
   if (!data) return <p>Guideline not found</p>;
 
-
   return (
-    <>
-      <Box>
+    <Box>
       <SearchHeader />
       <GuidelineTitle data={data} />
       <KeyHighlights data={data} />
@@ -57,10 +57,8 @@ const Guideline = () => {
       <AcademicData data={data} />
       <CommentBar data={data} />
       <Footer id={id} />
-      </Box>
-    </>
+    </Box>
   );
 };
 
 export default Guideline;
-

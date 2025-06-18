@@ -1,5 +1,7 @@
-import { Box} from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+
 import Header from '../components/Layout/Header';
 import RecentlyAdded from '../components/Homepage/RecentlyAdded';
 import MostlyViewed from '../components/Homepage/MostlyViewed';
@@ -13,22 +15,18 @@ const HomePage = () => {
   });
 
   useEffect(() => {
-    fetch('/api/homepage')
-      .then((res) => res.json())
-      .then((json) => setData(json))
+    axios.get('/api/homepage')
+      .then((response) => setData(response.data))
       .catch((err) => console.error('Error fetching data', err));
   }, []);
 
   return (
-    <>
-      <Box>
+    <Box>
       <Header />
       <RecentlyAdded data={data.recentlyAdded} />
       <MostlyViewed data={data.mostlyViewed} />
       <AllGuidelines data={data.allGuidelines} />
-      </Box>
-    
-    </>
+    </Box>
   );
 };
 

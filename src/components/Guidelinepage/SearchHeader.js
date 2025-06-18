@@ -7,15 +7,15 @@ export const SearchHeader = () => {
 
   return (
 
-    <Box h= {{ base: "80px", lg: "100px" }} bg="#D7F3FF4D" px={{ base: 4, md: 8 }} >
+    <Box h= {{ base: "80px", lg: "100px" }} bg="#D7F3FF4D" px={{ base: 4, md: 8 }}  >
  
     <Flex align="center" h= {{ base: "80px", lg: "100px" }} justifyContent="space-between">
    
     <Image src="../assets/GC.webp" alt="GC Logo" width={{ base: "80px", lg: "150px" }} height={{ base: "50px", lg: "70px" }} />
 
-    <Box px={4} py={2} borderRadius="md" w={{ base: "700px", lg: "900px" }}>
+    <Box px={4} py={2} borderRadius="md" w="full" maxW="900px" mx="auto">
       <Flex
-        direction={{ base: 'row', md: 'row' }}
+        direction="row"
         align="center"
         border="1px solid"
         borderColor="gray.200"
